@@ -148,21 +148,17 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 
 
     always_comb begin
-        if ((ExMem.RegWrite)&&(ExMem.rd !=0)) begin
-            if (ExMem.rd != IdEx.ra && MemWb.rd == IdEx.ra)
-                ForwardingA = 2'b01;
-            else if(ExMem.rd == IdEx.ra)
-                ForwardingA = 2'b10;
-            else
-                ForwardingA = 2'b00;
+        if ((ExMem.RegWrite)&&(ExMem.rd !=0) && ExMem.rd == IdEx.ra)
+            ForwardingA = 2'b10;
+        else if (MemWb.RegWrite && MemWb.rd !=0 && ExMem.rd != IdEx.ra && MemWb.rd == IdEx.ra)
+            ForwardingA = 2'b01;
+        else
+            ForwardingA = 2'b00;
 
-            if (ExMem.rd != IdEx.rb && MemWb.rd == IdEx.rb)
-                ForwardingB = 2'b01;
-            else if(ExMem.rd == IdEx.rb)
-                ForwardingB = 2'b10;
-            else
-                ForwardingB = 2'b00;
-            end
+        if((ExMem.RegWrite)&&(ExMem.rd !=0) && ExMem.rd == IdEx.rb)
+            ForwardingB = 2'b10;
+        else
+            ForwardingB = 2'b00;
 
         case(ForwardingA)
             2'b00: alu1in_a = IdEx.da; // If there is no forwarding Alu input1 from IdEx.da
