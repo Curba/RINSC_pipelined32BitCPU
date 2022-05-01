@@ -1,18 +1,20 @@
 module control( input logic [7:0]Op,
 		output logic [1:0] AluSrc,
 		output logic [3:0] AluOp,
+        output logic MemSignExtend,
 		output logic PCSrc,
-		output logic MemRead,
-		output logic MemWrite,
+		output logic [3:0] MemRead,
+		output logic [3:0] MemWrite,
         output logic AluOp2,
         output logic RbSelect,
 		output logic [1:0] MemToReg,
 		output logic RegWrite );
 
     always_comb begin
-        MemRead = 1'b0;
-        MemWrite = 1'b0;
+        MemRead = 4'b0000;
+        MemWrite = 4'b0000;
         MemToReg = 2'b00;
+        MemSignExtend = 1'b0;
         RegWrite = 1'b0;
         RbSelect = 1'b0;
         AluSrc = 2'b00;
@@ -22,9 +24,10 @@ module control( input logic [7:0]Op,
         case(Op)
             //NOP
             default: begin
-                MemRead = 1'b0;
-                MemWrite = 1'b0;
+                MemRead = 4'b0000;
+                MemWrite = 4'b0000;
                 MemToReg = 2'b00;
+                MemSignExtend = 1'b0;
                 RegWrite = 1'b0;
                 AluSrc = 2'b00;
                 AluOp = 4'b0000;
@@ -44,6 +47,14 @@ module control( input logic [7:0]Op,
                 AluOp = 4'b0010;
             end
 
+            //MULA
+            8'b00000111: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0010;
+                AluOp2 = 1'b1;
+            end
+
             //ADDI
             8'b00000011: begin
                 MemToReg = 2'b01;
@@ -54,14 +65,66 @@ module control( input logic [7:0]Op,
 
             //SW
             8'b00011001: begin
-                MemWrite = 1'b1;
+                MemWrite = 4'b1111;
+                RbSelect = 1'b1;
+                AluSrc = 2'b01;
+            end
+
+            //SH
+            8'b00010001: begin
+                MemWrite = 4'b0011;
+                RbSelect = 1'b1;
+                AluSrc = 2'b01;
+            end
+
+            //SB
+            8'b00001001: begin
+                MemWrite = 4'b0001;
                 RbSelect = 1'b1;
                 AluSrc = 2'b01;
             end
 
             //LW
             8'b00110001: begin
-                MemRead = 1'b1;
+                MemRead = 4'b1111;
+                MemToReg = 2'b00;
+                RegWrite = 1'b1;
+                RbSelect = 1'b1;
+                AluSrc = 2'b01;
+            end
+
+            //LH
+            8'b00101001: begin
+                MemRead = 4'b0011;
+                MemToReg = 2'b00;
+                RegWrite = 1'b1;
+                RbSelect = 1'b1;
+                AluSrc = 2'b01;
+            end
+
+            //LB
+            8'b00100001: begin
+                MemRead = 4'b0001;
+                MemToReg = 2'b00;
+                RegWrite = 1'b1;
+                RbSelect = 1'b1;
+                AluSrc = 2'b01;
+            end
+
+            //LHS
+            8'b01010001: begin
+                MemSignExtend = 1'b1;
+                MemRead = 4'b0011;
+                MemToReg = 2'b00;
+                RegWrite = 1'b1;
+                RbSelect = 1'b1;
+                AluSrc = 2'b01;
+            end
+
+            //LBS
+            8'b01001001: begin
+                MemSignExtend = 1'b1;
+                MemRead = 4'b0001;
                 MemToReg = 2'b00;
                 RegWrite = 1'b1;
                 RbSelect = 1'b1;
@@ -75,13 +138,6 @@ module control( input logic [7:0]Op,
                 PCSrc = 1'b1;
             end
 
-            //MULA
-            8'b00000111: begin
-                MemToReg = 2'b01;
-                RegWrite = 1'b1;
-                AluOp = 4'b0010;
-                AluOp2 = 1'b1;
-            end
 
         endcase
     end

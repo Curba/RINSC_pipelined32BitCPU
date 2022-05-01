@@ -15,8 +15,8 @@ VL_MODULE(Vtop___024root) {
     VL_IN8(clock,0,0);
     VL_IN8(reset,0,0);
     VL_OUT8(Op,7,0);
-    CData/*0:0*/ top__DOT__MemRead;
-    CData/*0:0*/ top__DOT__MemWrite;
+    CData/*3:0*/ top__DOT__MemRead;
+    CData/*3:0*/ top__DOT__MemWrite;
     CData/*0:0*/ top__DOT__PCSrc;
     CData/*1:0*/ top__DOT__MemToReg;
     CData/*0:0*/ top__DOT__RegWrite;
@@ -24,6 +24,7 @@ VL_MODULE(Vtop___024root) {
     CData/*1:0*/ top__DOT__ALUSrc;
     CData/*0:0*/ top__DOT__ALUOp2;
     CData/*0:0*/ top__DOT__RbSelect;
+    CData/*0:0*/ top__DOT__MemSignExtend;
     CData/*6:0*/ top__DOT__datapath__DOT__PC;
     CData/*1:0*/ top__DOT__datapath__DOT__ForwardingA;
     CData/*1:0*/ top__DOT__datapath__DOT__ForwardingB;
@@ -38,8 +39,8 @@ VL_MODULE(Vtop___024root) {
     IData/*31:0*/ top__DOT__datapath__DOT__alu1in_b;
     IData/*31:0*/ top__DOT__datapath__DOT__Alu2out;
     QData/*38:0*/ top__DOT__datapath__DOT__IfId;
-    VlWide<6>/*170:0*/ top__DOT__datapath__DOT__IdEx;
-    VlWide<4>/*113:0*/ top__DOT__datapath__DOT__ExMem;
+    VlWide<6>/*177:0*/ top__DOT__datapath__DOT__IdEx;
+    VlWide<4>/*120:0*/ top__DOT__datapath__DOT__ExMem;
     VlWide<3>/*78:0*/ top__DOT__datapath__DOT__MemWb;
     VlUnpacked<CData/*7:0*/, 128> top__DOT__datapath__DOT__instmem;
     VlUnpacked<CData/*7:0*/, 128> top__DOT__datapath__DOT__datamem;

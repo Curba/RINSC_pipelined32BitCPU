@@ -1,6 +1,8 @@
-module datapath(input logic clk, reset, MemRead, MemWrite,
+module datapath(input logic clk, reset,
+                input logic [3:0] MemWrite,
                 input logic [1:0] MemToReg,
-                 input logic RegWrite, PCSrc,
+                 input logic RegWrite, PCSrc, MemSignExtend,
+                 input logic [3:0] MemRead,
 				input logic [3:0] ALUOp,
                 input logic [1:0] ALUSrc,
                 input logic RbSelect,
@@ -31,7 +33,7 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
     logic IfIdEN;
 
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
-		if((IdEx.MemRead)&&((IdEx.rd == IfId.instruction[26:22])||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
 			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
 			stall_flag = 1;
 			PCenable = 0;
@@ -99,9 +101,10 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 		logic [1:0] ALUSrc;
 	    logic [3:0] ALUOp;
 	    logic ALUOp2;
+        logic MemSignExtend;
 		logic [1:0]MemToReg;
-		logic MemRead;
-		logic MemWrite;
+		logic [3:0] MemRead;
+		logic [3:0] MemWrite;
 		logic RegWrite;
 		logic [6:0] PCincremented;
 		logic [31:0] da;
@@ -121,7 +124,9 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
             IdEx.MemWrite <= 0;
             IdEx.MemToReg <= 0;
             IdEx.RegWrite <= 0;
-            end
+            IdEx.MemSignExtend <= 0;
+        end
+        IdEx.MemSignExtend <= MemSignExtend;
 		IdEx.ALUSrc <= ALUSrc;
 		IdEx.ALUOp <= ALUOp;
 		IdEx.ALUOp2 <= ALUOp2;
@@ -202,8 +207,9 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 
 	struct packed{
 		logic [6:0] PCincremented;
-		logic MemRead;
-		logic MemWrite;
+		logic [3:0] MemRead;
+		logic [3:0] MemWrite;
+        logic MemSignExtend;
 		logic RegWrite;
         logic ALUOp2;
 		logic [1:0] MemToReg;
@@ -216,6 +222,7 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 	// Ex Mem Stage
 	always @ (posedge clk) begin
         ExMem.PCincremented <= IdEx.PCincremented;
+        ExMem.MemSignExtend <= IdEx.MemSignExtend;
 		ExMem.MemRead <= IdEx.MemRead;
 		ExMem.MemWrite <= IdEx.MemWrite;
 		ExMem.RegWrite <= IdEx.RegWrite;
@@ -289,20 +296,39 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 
 	// Data Memory Write Logic
 	always @(posedge clk) begin
-		if (ExMem.MemWrite) begin
-			datamem[datamem_address] <= datamem_write_data[31:24];
+		if (ExMem.MemWrite[0])
+			datamem[datamem_address]   <= datamem_write_data[31:24];
+        if(ExMem.MemWrite[1])
 			datamem[datamem_address+1] <= datamem_write_data[23:16];
+        if(ExMem.MemWrite[2])
 			datamem[datamem_address+2] <= datamem_write_data[15:8];
+        if(ExMem.MemWrite[3])
 			datamem[datamem_address+3] <= datamem_write_data[7:0];
             $writememh("data_memory.dat", datamem);
 		end
-	end
 
 	// Data Memory Read Logic
-	assign datamem_data[31:24] = (ExMem.MemRead)? datamem[datamem_address]:8'bx;
-	assign datamem_data[23:16] = (ExMem.MemRead)? datamem[datamem_address+1]:8'bx;
-	assign datamem_data[15:8] = (ExMem.MemRead)? datamem[datamem_address+2]:8'bx;
-	assign datamem_data[7:0] = (ExMem.MemRead)? datamem[datamem_address+3]:8'bx;
+    always_comb begin
+        datamem_data[7:0]    =   (ExMem.MemRead[0])? datamem[datamem_address+3]:8'bx;
+        if(ExMem.MemRead[1] == 0 && ExMem.MemSignExtend)
+            datamem_data[15:8] = {(8){datamem_data[7]}};
+        else if (ExMem.MemRead[1])
+            datamem_data[15:8] = datamem[datamem_address+2];
+
+        if(ExMem.MemRead[2] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
+            datamem_data[23:16] = {(8){datamem_data[7]}};
+        else if (ExMem.MemRead[2] == 0 && ExMem.MemSignExtend)
+            datamem_data[23:16] = {(8){datamem_data[15]}};
+        else if(ExMem.MemRead[2])
+            datamem_data[23:16] = datamem[datamem_address+1];
+
+        if(ExMem.MemRead[3] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
+            datamem_data[31:24] = {(8){datamem_data[7]}};
+        else if (ExMem.MemRead[3] == 0 && ExMem.MemSignExtend)
+            datamem_data[31:24] = {(8){datamem_data[15]}};
+        else if(ExMem.MemRead[3])
+            datamem_data[31:24] = datamem[datamem_address];
+    end
 
 	//PC logic
 
