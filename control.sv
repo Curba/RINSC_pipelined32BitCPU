@@ -75,6 +75,7 @@ module control( input logic [7:0]Op,
                 PCSrc = 1'b1;
             end
 
+            //MULA
             8'b00000111: begin
                 MemToReg = 2'b01;
                 RegWrite = 1'b1;

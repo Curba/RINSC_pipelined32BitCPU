@@ -7,6 +7,7 @@
 #include <verilated_vcd_c.h>
 #include "testbench.h"
 #include "Vtop.h"
+#include "Vtop___024root.h"
 
 // Top level interface signals defined here:
 #define	Op          Op
@@ -24,6 +25,7 @@
 #define RF              top__DOT__datapath__DOT__RF
 #define instmem         top__DOT__datapath__DOT__instmem
 #define Alu1out         top__DOT__datapath__DOT__Alu1out
+#define PC              top__DOT__datapath__DOT__PC
 
 
 // In case you would like he simulator to do operations conditional to DEBUG mode:
@@ -73,13 +75,31 @@ int main(int argc, char** argv, char** env){
   // Note this message will only be output if we are in DEBUG mode:
   if (DEBUG) printf("Giving the system 1 cycle to initialize with reset...\n");
 
+  int PC = 0;
+  int OpCode = 0;
+  int R_Output = 0;
+  int R_in_1 = 0;
+  int R_in_2 = 0;
+  int R_in_3 = 0;
+  int R_ra = 0;
+
       tb->reset();
       clock_count++;
   // Hit that reset button for one clock cycle:
-  for(int x = 0; x < 50; x ++){
+  for(int x = 0; x < 35; x ++){
+
+    if (DEBUG) printf("PC: %d   OP: %02x In1: %02x In2: %02x In3: %02x Result: %02x Ra: %02x\n",
+            tb->m_topsim->rootp->top__DOT__datapath__DOT__PC,
+            tb->m_topsim->rootp->Op,
+            tb->m_topsim->rootp->top__DOT__datapath__DOT__RF[2],
+            tb->m_topsim->rootp->top__DOT__datapath__DOT__RF[3],
+            tb->m_topsim->rootp->top__DOT__datapath__DOT__RF[5],
+            tb->m_topsim->rootp->top__DOT__datapath__DOT__RF[10],
+            tb->m_topsim->rootp->top__DOT__datapath__DOT__RF[9]);
         tb->tick();
         clock_count++;
   }
+
 
   // Change the inputs if you wish, check the outputs if you wish, and
   // tick the clock until done:
@@ -88,7 +108,6 @@ int main(int argc, char** argv, char** env){
 //  tb->m_topsim->startSignal = 1;
 
   // verify the unsigned adder operation using 10000 random numbers for inputs:
-  if (DEBUG) printf("Running verification with 10000 random inputs...\n");
 
   printf("Execution completed successfully (simulation waveforms in .vcd file) ... !\n");
   printf("Elapsed Clock Cycles: %ld\n",clock_count);

@@ -1,0 +1,19 @@
+Executing the test ...
+Giving the system 1 cycle to initialize with reset...
+PC: 0   OP: 03 In1: 00 In2: 00 In3: 00 Result: 00 Ra: 00
+PC: 4   OP: 03 In1: 00 In2: 00 In3: 00 Result: 00 Ra: 00
+PC: 8   OP: 31 In1: 00 In2: 00 In3: 00 Result: 00 Ra: 00
+PC: 12   OP: 31 In1: 00 In2: 00 In3: 14 Result: 00 Ra: 00
+PC: 16   OP: 00 In1: 00 In2: 00 In3: 14 Result: 00 Ra: 00
+PC: 20   OP: 00 In1: 2211 In2: 00 In3: 14 Result: 00 Ra: 00
+PC: 24   OP: 07 In1: 2211 In2: af33 In3: 14 Result: 00 Ra: 00
+PC: 28   OP: 00 In1: 2211 In2: af33 In3: 14 Result: 00 Ra: 00
+PC: 32   OP: 00 In1: 2211 In2: af33 In3: 14 Result: 00 Ra: 00
+PC: 36   OP: 19 In1: 2211 In2: af33 In3: 14 Result: 35887 Ra: 00
+PC: 40   OP: 04 In1: 2211 In2: af33 In3: 14 Result: 35887 Ra: 00
+PC: 0   OP: 00 In1: 2211 In2: af33 In3: 14 Result: 35887 Ra: 00
+PC: 4   OP: 03 In1: 2211 In2: af33 In3: 14 Result: 35887 Ra: 00
+PC: 8   OP: 31 In1: 2211 In2: af33 In3: 14 Result: 35887 Ra: 28
+PC: 12   OP: 31 In1: 2211 In2: af33 In3: 14 Result: 35887 Ra: 28
+Execution completed successfully (simulation waveforms in .vcd file) ... !
+Elapsed Clock Cycles: 16

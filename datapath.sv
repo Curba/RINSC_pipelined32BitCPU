@@ -23,6 +23,27 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
     logic [31:0] datamem_data;
     logic [31:0] datamem_write_data;
 
+    //Forwarding Parameters
+    logic [1:0] ForwardingA;
+	logic [1:0] ForwardingB;
+    logic stall_flag;
+    logic PCenable;
+    logic IfIdEN;
+
+    always_comb  begin// data hazard detection and forward , control hazard detection and flush
+		if((IdEx.MemRead)&&((IdEx.rd == IfId.instruction[26:22])||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
+			stall_flag = 1;
+			PCenable = 0;
+			IfIdEN = 0;
+			end
+		else begin
+			stall_flag = 0;
+			PCenable = 1;
+			IfIdEN = 1;
+			end
+
+        end
 	// IF/ID Pipeline staging register fields can be represented using structure format of System Verilog
 	// You may refer to the first field in the structure as IfId.instruction for example
 	struct packed{
@@ -31,8 +52,10 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 	} IfId;
 
 	always @ (posedge clk) begin
+        if(IfIdEN)begin
 		IfId.instruction <= instmem_data[31:0];
 		IfId.PCincremented <= PC+6'b100;
+        end
 	end
 
 	//decode
@@ -71,6 +94,8 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 	end
 
 	struct packed{
+        logic [4:0] ra;
+        logic [4:0] rb;
 		logic [1:0] ALUSrc;
 	    logic [3:0] ALUOp;
 	    logic ALUOp2;
@@ -88,6 +113,15 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 	} IdEx;
 
 	always @ (posedge clk) begin
+        if(stall_flag)begin
+            IdEx.ALUSrc <= 0;
+            IdEx.ALUOp <= 0;
+            IdEx.ALUOp2 <= 0;
+            IdEx.MemRead <= 0;
+            IdEx.MemWrite <= 0;
+            IdEx.MemToReg <= 0;
+            IdEx.RegWrite <= 0;
+            end
 		IdEx.ALUSrc <= ALUSrc;
 		IdEx.ALUOp <= ALUOp;
 		IdEx.ALUOp2 <= ALUOp2;
@@ -102,21 +136,55 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 		IdEx.shamt <= IfId.instruction[16:8];
 		IdEx.rd <= IfId.instruction[31:27];
 		IdEx.signextend <= { {(18){IfId.instruction [21]}},IfId.instruction [21:8] };
+        IdEx.ra <= IfId.instruction[26:22];
+        IdEx.rb <= (RbSelect) ? IfId.instruction[31:27]:IfId.instruction[21:17];
 	end
 
 	// Execute Stage Variables
 	logic [31:0] alu1in_a;
 	logic [31:0] alu1in_b;
+	logic [31:0] alu1in_b_mux;
 	logic [31:0] Alu1out;
 
-	assign alu1in_a = IdEx.da;
+
+    always_comb begin
+        if ((ExMem.RegWrite)&&(ExMem.rd !=0)) begin
+            if (ExMem.rd != IdEx.ra && MemWb.rd == IdEx.ra)
+                ForwardingA = 2'b01;
+            else if(ExMem.rd == IdEx.ra)
+                ForwardingA = 2'b10;
+            else
+                ForwardingA = 2'b00;
+
+            if (ExMem.rd != IdEx.rb && MemWb.rd == IdEx.rb)
+                ForwardingB = 2'b01;
+            else if(ExMem.rd == IdEx.rb)
+                ForwardingB = 2'b10;
+            else
+                ForwardingB = 2'b00;
+            end
+
+        case(ForwardingA)
+            2'b00: alu1in_a = IdEx.da; // If there is no forwarding Alu input1 from IdEx.da
+            2'b01: alu1in_a = RF_WriteData;
+            2'b10:  alu1in_a = ExMem.Alu1out; // If forwarding logic set to 10, corresponding data at ExMem register
+            default: alu1in_a = ExMem.Alu1out;
+    	endcase
+
+        case(ForwardingB)
+            2'b00: alu1in_b = alu1in_b_mux;
+            2'b01: alu1in_b = RF_WriteData;
+            2'b10: alu1in_b = ExMem.Alu1out;
+            default: alu1in_b = ExMem.Alu1out;
+        endcase
+    end
 
 	always_comb begin
 		case(IdEx.ALUSrc)
-			2'b00: alu1in_b = IdEx.db;
-			2'b01: alu1in_b = IdEx.signextend;
-			2'b10: alu1in_b = {{(23){1'b1}},IdEx.shamt};
-			default: alu1in_b = IdEx.db; endcase
+			2'b00: alu1in_b_mux = IdEx.db;
+			2'b01: alu1in_b_mux = IdEx.signextend;
+			2'b10: alu1in_b_mux = {{(23){1'b1}},IdEx.shamt};
+			default: alu1in_b_mux = IdEx.db; endcase
 	end
 
 	always_comb begin
@@ -243,9 +311,7 @@ module datapath(input logic clk, reset, MemRead, MemWrite,
 	always@ (posedge clk)begin
 		if(reset)
 			PC <= PCSTART;
-		else
-			PC <= (PCSrc) ? JumpAddress[6:0]:PC+7'b100;
-	end
-
+        else if(PCenable)
+		    PC <= (PCSrc) ? JumpAddress[6:0]:PC+7'b100;
+    end
 endmodule
-
