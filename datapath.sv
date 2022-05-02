@@ -35,6 +35,11 @@ module datapath(input logic clk, reset,
     logic IfIdEN;
     logic flush;
 
+    logic [1:0]branchId;
+    logic [1:0] branchex;
+    assign  branchId = IdEx.branch_flag;
+    assign  branchex = ExMem.branch_flag;
+
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
 		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
 			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
@@ -47,17 +52,14 @@ module datapath(input logic clk, reset,
 			PCenable = 1;
 			IfIdEN = 1;
 			end
-            flush = 0;
-/*
+
         if(jump_flag != 0 || branch_flag != 0 || IdEx.branch_flag != 0 || ExMem.branch_flag != 0)begin
             flush = 1;
-            PCenable = 0;
             end
         else begin
+			IfIdEN = 1;
             flush = 0;
-            PCenable = 1;
             end
-*/
 
         end
 	// IF/ID Pipeline staging register fields can be represented using structure format of System Verilog
@@ -69,7 +71,7 @@ module datapath(input logic clk, reset,
 
 	always @ (posedge clk) begin
         if(IfIdEN)begin
-		IfId.instruction <= (flush) ? 32'b0:instmem_data[31:0];
+		IfId.instruction <= (flush) ? 0:instmem_data[31:0];
 		IfId.PCincremented <= PC+6'b100;
         end
 	end
@@ -126,7 +128,7 @@ module datapath(input logic clk, reset,
 		logic [31:0] dc;
 		logic [31:0] signextend;
 		logic [4:0] rd;
-		logic [8:0] shamt;
+		logic [4:0] shamt;
         logic [1:0] branch_flag;
         logic [13:0] branch_addr;
 	} IdEx;
@@ -157,7 +159,7 @@ module datapath(input logic clk, reset,
 		IdEx.da	<= da;
 		IdEx.db	<= db;
 		IdEx.dc	<= dc;
-		IdEx.shamt <= IfId.instruction[16:8];
+		IdEx.shamt <= IfId.instruction[16:12];
 		IdEx.rd <= IfId.instruction[31:27];
 		IdEx.signextend <= { {(18){IfId.instruction [21]}},IfId.instruction [21:8] };
         IdEx.ra <= IfId.instruction[26:22];
@@ -173,14 +175,14 @@ module datapath(input logic clk, reset,
 
 
     always_comb begin
-        if ((ExMem.RegWrite)&&(ExMem.rd !=0) && ExMem.rd == IdEx.ra)
+        if ((ExMem.RegWrite)&&(ExMem.rd !=0) && ((ExMem.branch_flag != 0 && ExMem.rd == IdEx.rb) || (ExMem.rd == IdEx.ra)))
             ForwardingA = 2'b10;
         else if (MemWb.RegWrite && MemWb.rd !=0 && ExMem.rd != IdEx.ra && MemWb.rd == IdEx.ra)
             ForwardingA = 2'b01;
         else
             ForwardingA = 2'b00;
 
-        if((ExMem.RegWrite)&&(ExMem.rd !=0) && ((ExMem.branch_flag != 0 && ExMem.rd == IdEx.ra) || (ExMem.rd == IdEx.rb)))
+        if ((ExMem.RegWrite)&&(ExMem.rd !=0) && ((ExMem.branch_flag != 0 && ExMem.rd == IdEx.ra) || (ExMem.rd == IdEx.rb)))
             ForwardingB = 2'b10;
         else if (MemWb.RegWrite && MemWb.rd !=0 && ExMem.rd != IdEx.rb && MemWb.rd == IdEx.rb)
             ForwardingB = 2'b01;
@@ -206,7 +208,7 @@ module datapath(input logic clk, reset,
 		case(IdEx.ALUSrc)
 			2'b00: alu1in_b_mux = IdEx.db;
 			2'b01: alu1in_b_mux = IdEx.signextend;
-			2'b10: alu1in_b_mux = {{(23){1'b1}},IdEx.shamt};
+			2'b10: alu1in_b_mux = {{(27){1'b0}},IdEx.shamt};
 			default: alu1in_b_mux = IdEx.db; endcase
 	end
 

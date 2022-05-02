@@ -33,6 +33,7 @@ VL_MODULE(Vtop___024root) {
     CData/*0:0*/ top__DOT__datapath__DOT__stall_flag;
     CData/*0:0*/ top__DOT__datapath__DOT__PCenable;
     CData/*0:0*/ top__DOT__datapath__DOT__IfIdEN;
+    CData/*0:0*/ top__DOT__datapath__DOT__flush;
     CData/*0:0*/ top__DOT__datapath__DOT__zero_flag;
     CData/*0:0*/ __Vclklast__TOP__clock;
     IData/*31:0*/ top__DOT__datapath__DOT__instmem_data;
@@ -43,7 +44,7 @@ VL_MODULE(Vtop___024root) {
     IData/*31:0*/ top__DOT__datapath__DOT__Alu1out;
     IData/*31:0*/ top__DOT__datapath__DOT__Alu2out;
     QData/*38:0*/ top__DOT__datapath__DOT__IfId;
-    VlWide<7>/*193:0*/ top__DOT__datapath__DOT__IdEx;
+    VlWide<6>/*189:0*/ top__DOT__datapath__DOT__IdEx;
     VlWide<5>/*137:0*/ top__DOT__datapath__DOT__ExMem;
     VlWide<3>/*78:0*/ top__DOT__datapath__DOT__MemWb;
     VlUnpacked<CData/*7:0*/, 128> top__DOT__datapath__DOT__instmem;

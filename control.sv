@@ -232,6 +232,34 @@ module control( input logic [7:0]Op,
                 PCSrc = 1'b1;
             end
 
+            //SLTI
+            8'b00110011: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluSrc = 2'b01;
+                AluOp = 4'b1001;
+            end
+
+            //SLL
+            8'b01001000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0110;
+            end
+
+            //SRL
+            8'b01010000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b1000;
+            end
+
+            //SRA
+            8'b01011000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0111;
+            end
 
         endcase
     end
