@@ -1,6 +1,7 @@
 module datapath(input logic clk, reset,
                 input logic [3:0] MemWrite,
                 input logic [1:0] MemToReg,
+                input jump_flag,
                  input logic RegWrite, PCSrc, MemSignExtend,
                  input logic [1:0] branch_flag,
                  input logic [3:0] MemRead,
@@ -32,6 +33,7 @@ module datapath(input logic clk, reset,
     logic stall_flag;
     logic PCenable;
     logic IfIdEN;
+    logic flush;
 
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
 		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
@@ -45,6 +47,17 @@ module datapath(input logic clk, reset,
 			PCenable = 1;
 			IfIdEN = 1;
 			end
+            flush = 0;
+/*
+        if(jump_flag != 0 || branch_flag != 0 || IdEx.branch_flag != 0 || ExMem.branch_flag != 0)begin
+            flush = 1;
+            PCenable = 0;
+            end
+        else begin
+            flush = 0;
+            PCenable = 1;
+            end
+*/
 
         end
 	// IF/ID Pipeline staging register fields can be represented using structure format of System Verilog
@@ -56,7 +69,7 @@ module datapath(input logic clk, reset,
 
 	always @ (posedge clk) begin
         if(IfIdEN)begin
-		IfId.instruction <= instmem_data[31:0];
+		IfId.instruction <= (flush) ? 32'b0:instmem_data[31:0];
 		IfId.PCincremented <= PC+6'b100;
         end
 	end

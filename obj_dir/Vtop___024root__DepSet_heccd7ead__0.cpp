@@ -10,13 +10,13 @@ extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_h982b258a_0;
 extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_hd0b6dbb9_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_h5546977f_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_he9f7fa8c_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hdc11e6d5_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_he34ca08d_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hb0ca40d7_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h15942a39_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_h08dc5145_0;
 extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_h21acbe60_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h46169594_0;
-extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hdc11e6d5_0;
 
 VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
@@ -922,6 +922,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__MemToReg = Vtop__ConstPool__TABLE_h5546977f_0
         [__Vtableidx1];
     vlSelf->top__DOT__MemSignExtend = Vtop__ConstPool__TABLE_he9f7fa8c_0
+        [__Vtableidx1];
+    vlSelf->top__DOT__jump_flag = Vtop__ConstPool__TABLE_hdc11e6d5_0
         [__Vtableidx1];
     vlSelf->top__DOT__branch_flag = Vtop__ConstPool__TABLE_he34ca08d_0
         [__Vtableidx1];

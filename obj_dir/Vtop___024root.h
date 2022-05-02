@@ -26,6 +26,7 @@ VL_MODULE(Vtop___024root) {
     CData/*0:0*/ top__DOT__RbSelect;
     CData/*0:0*/ top__DOT__MemSignExtend;
     CData/*1:0*/ top__DOT__branch_flag;
+    CData/*0:0*/ top__DOT__jump_flag;
     CData/*6:0*/ top__DOT__datapath__DOT__PC;
     CData/*1:0*/ top__DOT__datapath__DOT__ForwardingA;
     CData/*1:0*/ top__DOT__datapath__DOT__ForwardingB;

@@ -36,13 +36,13 @@ extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_h982b258a_0;
 extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_hd0b6dbb9_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_h5546977f_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_he9f7fa8c_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hdc11e6d5_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_he34ca08d_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hb0ca40d7_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h15942a39_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_h08dc5145_0;
 extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_h21acbe60_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h46169594_0;
-extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hdc11e6d5_0;
 
 VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
@@ -315,6 +315,8 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
         [__Vtableidx1];
     vlSelf->top__DOT__MemSignExtend = Vtop__ConstPool__TABLE_he9f7fa8c_0
         [__Vtableidx1];
+    vlSelf->top__DOT__jump_flag = Vtop__ConstPool__TABLE_hdc11e6d5_0
+        [__Vtableidx1];
     vlSelf->top__DOT__branch_flag = Vtop__ConstPool__TABLE_he34ca08d_0
         [__Vtableidx1];
     vlSelf->top__DOT__RegWrite = Vtop__ConstPool__TABLE_hb0ca40d7_0
@@ -542,6 +544,7 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__RbSelect = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__MemSignExtend = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__branch_flag = VL_RAND_RESET_I(2);
+    vlSelf->top__DOT__jump_flag = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__datapath__DOT__PC = VL_RAND_RESET_I(7);
     for (int __Vi0=0; __Vi0<128; ++__Vi0) {
         vlSelf->top__DOT__datapath__DOT__instmem[__Vi0] = VL_RAND_RESET_I(8);

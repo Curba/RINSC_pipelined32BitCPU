@@ -1,12 +1,12 @@
 // Here are the contents of the Byte-Addressable Instruction Memory Array of 32 32-bit words
 00 00 00 00
 28 40 02 03
-30 00 03 03
-39 4c 00 08
+30 00 08 03
+29 80 08 41
 00 00 00 00
 00 00 00 00
-00 00 00 00
-00 00 00 00
+28 40 04 03
+30 00 06 03
 00 00 00 00
 00 00 00 00
 00 00 00 00
