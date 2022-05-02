@@ -47,6 +47,34 @@ module control( input logic [7:0]Op,
                 AluOp = 4'b0010;
             end
 
+            //SUB
+            8'b00010000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0001;
+            end
+
+            //AND
+            8'b00101000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0101;
+            end
+
+            //OR
+            8'b00110000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0100;
+            end
+
+            //XOR
+            8'b00111000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b0011;
+            end
+
             //MULA
             8'b00000111: begin
                 MemToReg = 2'b01;
@@ -55,12 +83,59 @@ module control( input logic [7:0]Op,
                 AluOp2 = 1'b1;
             end
 
+            //SLT
+            8'b01000000: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluOp = 4'b1001;
+            end
+
             //ADDI
             8'b00000011: begin
                 MemToReg = 2'b01;
                 RegWrite = 1'b1;
                 AluSrc = 2'b01;
                 AluOp = 4'b0000;
+            end
+
+            //SUBI
+            8'b00001011: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluSrc = 2'b01;
+                AluOp = 4'b0001;
+            end
+
+            //MULI
+            8'b00010011: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluSrc = 2'b01;
+                AluOp = 4'b0010;
+            end
+
+            //ORI
+            8'b00011011: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluSrc = 2'b01;
+                AluOp = 4'b0100;
+            end
+
+            //XORI
+            8'b00100011: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluSrc = 2'b01;
+                AluOp = 4'b0011;
+            end
+
+            //ANDI
+            8'b00101011: begin
+                MemToReg = 2'b01;
+                RegWrite = 1'b1;
+                AluSrc = 2'b01;
+                AluOp = 4'b0101;
             end
 
             //SW
