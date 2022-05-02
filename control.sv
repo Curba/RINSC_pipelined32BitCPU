@@ -210,12 +210,14 @@ module control( input logic [7:0]Op,
 
             //BEQ
             8'b00111001 : begin
+                RbSelect = 1'b1;
                 branch_flag = 2'b01;
                 AluOp = 4'b0001;
             end
 
             //BNE
             8'b01000001 : begin
+                RbSelect = 1'b1;
                 branch_flag = 2'b10;
                 AluOp = 4'b0001;
             end

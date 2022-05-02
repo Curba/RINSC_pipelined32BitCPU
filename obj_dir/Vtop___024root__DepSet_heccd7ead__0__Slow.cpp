@@ -38,7 +38,7 @@ extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_h5546977f_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_he9f7fa8c_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_he34ca08d_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_hb0ca40d7_0;
-extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h655dc3e0_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h15942a39_0;
 extern const VlUnpacked<CData/*1:0*/, 256> Vtop__ConstPool__TABLE_h08dc5145_0;
 extern const VlUnpacked<CData/*3:0*/, 256> Vtop__ConstPool__TABLE_h21acbe60_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtop__ConstPool__TABLE_h46169594_0;
@@ -227,9 +227,18 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
         ((((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
             >> 0x19U) & (0U != (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
                                          >> 0x11U)))) 
-          & ((0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                       >> 0x11U)) == (0x1fU & (vlSelf->top__DOT__datapath__DOT__IdEx[5U] 
-                                               >> 0x18U))))
+          & (((0U != (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                            >> 0xeU))) & ((0x1fU & 
+                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                            >> 0x11U)) 
+                                          == (0x1fU 
+                                              & ((vlSelf->top__DOT__datapath__DOT__IdEx[6U] 
+                                                  << 3U) 
+                                                 | (vlSelf->top__DOT__datapath__DOT__IdEx[5U] 
+                                                    >> 0x1dU))))) 
+             | ((0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                          >> 0x11U)) == (0x1fU & (vlSelf->top__DOT__datapath__DOT__IdEx[5U] 
+                                                  >> 0x18U)))))
           ? 2U : (((((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
                       >> 7U) & (0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]))) 
                     & ((0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
@@ -310,7 +319,7 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
         [__Vtableidx1];
     vlSelf->top__DOT__RegWrite = Vtop__ConstPool__TABLE_hb0ca40d7_0
         [__Vtableidx1];
-    vlSelf->top__DOT__RbSelect = Vtop__ConstPool__TABLE_h655dc3e0_0
+    vlSelf->top__DOT__RbSelect = Vtop__ConstPool__TABLE_h15942a39_0
         [__Vtableidx1];
     vlSelf->top__DOT__ALUSrc = Vtop__ConstPool__TABLE_h08dc5145_0
         [__Vtableidx1];

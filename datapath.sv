@@ -167,7 +167,7 @@ module datapath(input logic clk, reset,
         else
             ForwardingA = 2'b00;
 
-        if((ExMem.RegWrite)&&(ExMem.rd !=0) && ExMem.rd == IdEx.rb)
+        if((ExMem.RegWrite)&&(ExMem.rd !=0) && ((ExMem.branch_flag != 0 && ExMem.rd == IdEx.ra) || (ExMem.rd == IdEx.rb)))
             ForwardingB = 2'b10;
         else if (MemWb.RegWrite && MemWb.rd !=0 && ExMem.rd != IdEx.rb && MemWb.rd == IdEx.rb)
             ForwardingB = 2'b01;
