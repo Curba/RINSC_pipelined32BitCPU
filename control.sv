@@ -1,6 +1,7 @@
 module control( input logic [7:0]Op,
 		output logic [1:0] AluSrc,
 		output logic [3:0] AluOp,
+        output logic [1:0] branch_flag,
         output logic MemSignExtend,
 		output logic PCSrc,
 		output logic [3:0] MemRead,
@@ -15,6 +16,7 @@ module control( input logic [7:0]Op,
         MemWrite = 4'b0000;
         MemToReg = 2'b00;
         MemSignExtend = 1'b0;
+        branch_flag = 2'b00;
         RegWrite = 1'b0;
         RbSelect = 1'b0;
         AluSrc = 2'b00;
@@ -204,6 +206,18 @@ module control( input logic [7:0]Op,
                 RegWrite = 1'b1;
                 RbSelect = 1'b1;
                 AluSrc = 2'b01;
+            end
+
+            //BEQ
+            8'b00111001 : begin
+                branch_flag = 2'b01;
+                AluOp = 4'b0001;
+            end
+
+            //BNE
+            8'b01000001 : begin
+                branch_flag = 2'b10;
+                AluOp = 4'b0001;
             end
 
             //JAL

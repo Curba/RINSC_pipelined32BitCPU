@@ -2,6 +2,7 @@ module datapath(input logic clk, reset,
                 input logic [3:0] MemWrite,
                 input logic [1:0] MemToReg,
                  input logic RegWrite, PCSrc, MemSignExtend,
+                 input logic [1:0] branch_flag,
                  input logic [3:0] MemRead,
 				input logic [3:0] ALUOp,
                 input logic [1:0] ALUSrc,
@@ -113,6 +114,8 @@ module datapath(input logic clk, reset,
 		logic [31:0] signextend;
 		logic [4:0] rd;
 		logic [8:0] shamt;
+        logic [1:0] branch_flag;
+        logic [13:0] branch_addr;
 	} IdEx;
 
 	always @ (posedge clk) begin
@@ -125,6 +128,7 @@ module datapath(input logic clk, reset,
             IdEx.MemToReg <= 0;
             IdEx.RegWrite <= 0;
             IdEx.MemSignExtend <= 0;
+            IdEx.branch_flag <= 0;
         end
         IdEx.MemSignExtend <= MemSignExtend;
 		IdEx.ALUSrc <= ALUSrc;
@@ -135,6 +139,8 @@ module datapath(input logic clk, reset,
 		IdEx.MemToReg <= MemToReg;
 		IdEx.RegWrite <= RegWrite;
 		IdEx.PCincremented <= IfId.PCincremented;
+        IdEx.branch_addr <= IfId.instruction [21:8];
+        IdEx.branch_flag <= branch_flag;
 		IdEx.da	<= da;
 		IdEx.db	<= db;
 		IdEx.dc	<= dc;
@@ -150,6 +156,7 @@ module datapath(input logic clk, reset,
 	logic [31:0] alu1in_b;
 	logic [31:0] alu1in_b_mux;
 	logic [31:0] Alu1out;
+    logic zero_flag;
 
 
     always_comb begin
@@ -201,8 +208,11 @@ module datapath(input logic clk, reset,
 			4'b0110: Alu1out = alu1in_a << alu1in_b;
 			4'b0111: Alu1out = alu1in_a >>> alu1in_b;
 			4'b1000: Alu1out = alu1in_a >> alu1in_b;
+			4'b1001: Alu1out = (alu1in_a <=  alu1in_b) ? 1:0;
 			default: Alu1out = alu1in_a + alu1in_b;
 		endcase
+
+        assign zero_flag = (Alu1out == 0) ? 1:0;
 	end
 
 	struct packed{
@@ -217,6 +227,9 @@ module datapath(input logic clk, reset,
 		logic [31:0] db;
 		logic [31:0] dc;
 		logic [4:0] rd;
+        logic zero_flag;
+        logic [1:0]branch_flag;
+        logic [13:0] branch_addr;
 	} ExMem;
 
 	// Ex Mem Stage
@@ -232,14 +245,24 @@ module datapath(input logic clk, reset,
 		ExMem.db <= IdEx.db;
 		ExMem.dc <= IdEx.dc;
 		ExMem.rd <= IdEx.rd;
+        ExMem.zero_flag <= zero_flag;
+        ExMem.branch_flag <= IdEx.branch_flag;
+        ExMem.branch_addr <= IdEx.branch_addr;
 	end
 
 	logic [31:0] alu2in_a;
 	logic [31:0] alu2in_b;
 	logic [31:0] Alu2out;
+    logic branch_src;
+    logic branch_ne;
+    logic branch_eq;
 
     assign alu2in_a = ExMem.Alu1out;
     assign alu2in_b = ExMem.dc;
+
+    assign branch_eq = (ExMem.zero_flag == 1 && ExMem.branch_flag[0] == 1 && ExMem.branch_flag[1] == 0) ? 1:0;
+    assign branch_ne = (ExMem.zero_flag == 0 && ExMem.branch_flag[1] == 1 && ExMem.branch_flag[0] == 0) ? 1:0;
+    assign branch_src = (branch_ne || branch_eq) ? 1:0;
 
 	always_comb begin
 		case(ExMem.ALUOp2)
@@ -247,6 +270,7 @@ module datapath(input logic clk, reset,
 			1'b1: Alu2out = alu2in_a + alu2in_b;
 		endcase
 	end
+
 	//memwb
 	struct packed{
 	    //control signals
@@ -336,6 +360,6 @@ module datapath(input logic clk, reset,
 		if(reset)
 			PC <= PCSTART;
         else if(PCenable)
-		    PC <= (PCSrc) ? JumpAddress[6:0]:PC+7'b100;
+		    PC <= (branch_src) ? ExMem.branch_addr[6:0]: (PCSrc ? JumpAddress[6:0]:PC+7'b100);
     end
 endmodule
