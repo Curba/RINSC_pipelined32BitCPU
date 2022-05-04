@@ -30,6 +30,7 @@ module datapath(input logic clk, reset,
     //Forwarding Parameters
     logic [1:0] ForwardingA;
 	logic [1:0] ForwardingB;
+    logic  ForwardingC;
     logic stall_flag;
     logic PCenable;
     logic IfIdEN;
@@ -41,7 +42,8 @@ module datapath(input logic clk, reset,
     assign  branchex = ExMem.branch_flag;
 
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
-		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
+            ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
 			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
 			stall_flag = 1;
 			PCenable = 0;
@@ -115,6 +117,7 @@ module datapath(input logic clk, reset,
 	struct packed{
         logic [4:0] ra;
         logic [4:0] rb;
+        logic [4:0] rc;
 		logic [1:0] ALUSrc;
 	    logic [3:0] ALUOp;
 	    logic ALUOp2;
@@ -165,6 +168,7 @@ module datapath(input logic clk, reset,
 		IdEx.signextend <= { {(18){IfId.instruction [21]}},IfId.instruction [21:8] };
         IdEx.ra <= IfId.instruction[26:22];
         IdEx.rb <= (RbSelect) ? IfId.instruction[31:27]:IfId.instruction[21:17];
+        IdEx.rc <= IfId.instruction[16:12];
 	end
 
 	// Execute Stage Variables
@@ -203,6 +207,11 @@ module datapath(input logic clk, reset,
             2'b10: alu1in_b = ExMem.Alu1out;
             default: alu1in_b = ExMem.Alu1out;
         endcase
+
+        if (MemWb.RegWrite && MemWb.rd !=0 && ExMem.rd != IdEx.rc && MemWb.rd == ExMem.rc)
+            ForwardingC = 1;
+        else
+            ForwardingC = 0;
     end
 
 	always_comb begin
@@ -243,6 +252,7 @@ module datapath(input logic clk, reset,
 		logic [31:0] db;
 		logic [31:0] dc;
 		logic [4:0] rd;
+		logic [4:0] rc;
         logic zero_flag;
         logic [1:0]branch_flag;
         logic [13:0] branch_addr;
@@ -261,6 +271,7 @@ module datapath(input logic clk, reset,
 		ExMem.db <= IdEx.db;
 		ExMem.dc <= IdEx.dc;
 		ExMem.rd <= IdEx.rd;
+		ExMem.rc <= IdEx.rc;
         ExMem.zero_flag <= zero_flag;
         ExMem.branch_flag <= IdEx.branch_flag;
         ExMem.branch_addr <= IdEx.branch_addr;
@@ -274,7 +285,7 @@ module datapath(input logic clk, reset,
     logic branch_eq;
 
     assign alu2in_a = ExMem.Alu1out;
-    assign alu2in_b = ExMem.dc;
+    assign alu2in_b = (ForwardingC == 1)?  RF_WriteData:ExMem.dc;
 
     assign branch_eq = (ExMem.zero_flag == 1 && ExMem.branch_flag[0] == 1 && ExMem.branch_flag[1] == 0) ? 1:0;
     assign branch_ne = (ExMem.zero_flag == 0 && ExMem.branch_flag[1] == 1 && ExMem.branch_flag[0] == 0) ? 1:0;
