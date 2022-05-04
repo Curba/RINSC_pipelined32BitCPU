@@ -55,9 +55,10 @@ module datapath(input logic clk, reset,
 
         if(jump_flag != 0 || branch_flag != 0 || IdEx.branch_flag != 0 || ExMem.branch_flag != 0)begin
             flush = 1;
+            PCenable = (branch_src != 1) ? 0:1;
             end
         else begin
-			IfIdEN = 1;
+			//IfIdEN = 1;
             flush = 0;
             end
 

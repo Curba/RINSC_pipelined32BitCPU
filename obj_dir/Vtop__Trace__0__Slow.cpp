@@ -213,15 +213,7 @@ VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, Veril
                                  << 0xaU) | (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
                                              >> 0x16U))),32);
     tracep->fullIData(oldp+49,(vlSelf->top__DOT__datapath__DOT__Alu2out),32);
-    tracep->fullBit(oldp+50,(((1U & (((IData)((0x8000U 
-                                               == (0x1c000U 
-                                                   & vlSelf->top__DOT__datapath__DOT__ExMem[0U])))
-                                       ? 1U : 0U) | 
-                                     ((IData)((0x14000U 
-                                               == (0x1c000U 
-                                                   & vlSelf->top__DOT__datapath__DOT__ExMem[0U])))
-                                       ? 1U : 0U)))
-                               ? 1U : 0U)));
+    tracep->fullBit(oldp+50,(vlSelf->top__DOT__datapath__DOT__branch_src));
     tracep->fullBit(oldp+51,(((IData)((0x8000U == (0x1c000U 
                                                    & vlSelf->top__DOT__datapath__DOT__ExMem[0U])))
                                ? 1U : 0U)));

@@ -35,6 +35,7 @@ VL_MODULE(Vtop___024root) {
     CData/*0:0*/ top__DOT__datapath__DOT__IfIdEN;
     CData/*0:0*/ top__DOT__datapath__DOT__flush;
     CData/*0:0*/ top__DOT__datapath__DOT__zero_flag;
+    CData/*0:0*/ top__DOT__datapath__DOT__branch_src;
     CData/*0:0*/ __Vclklast__TOP__clock;
     IData/*31:0*/ top__DOT__datapath__DOT__instmem_data;
     IData/*31:0*/ top__DOT__datapath__DOT__datamem_data;
