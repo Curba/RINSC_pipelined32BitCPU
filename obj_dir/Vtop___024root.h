@@ -39,6 +39,7 @@ VL_MODULE(Vtop___024root) {
     CData/*0:0*/ __Vclklast__TOP__clock;
     IData/*31:0*/ top__DOT__datapath__DOT__instmem_data;
     IData/*31:0*/ top__DOT__datapath__DOT__datamem_data;
+    IData/*31:0*/ top__DOT__datapath__DOT__datamem_write_data;
     IData/*31:0*/ top__DOT__datapath__DOT__RF_WriteData;
     IData/*31:0*/ top__DOT__datapath__DOT__alu1in_a;
     IData/*31:0*/ top__DOT__datapath__DOT__alu1in_b;

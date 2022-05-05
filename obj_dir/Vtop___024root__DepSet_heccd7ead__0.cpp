@@ -108,8 +108,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if ((1U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])) {
         __Vdlyvval__top__DOT__datapath__DOT__datamem__v0 
-            = (0xffU & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                        >> 0x13U));
+            = (vlSelf->top__DOT__datapath__DOT__datamem_write_data 
+               >> 0x18U);
         __Vdlyvset__top__DOT__datapath__DOT__datamem__v0 = 1U;
         __Vdlyvdim0__top__DOT__datapath__DOT__datamem__v0 
             = (0x7fU & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
@@ -118,8 +118,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])) {
         __Vdlyvval__top__DOT__datapath__DOT__datamem__v1 
-            = (0xffU & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                        >> 0xbU));
+            = (0xffU & (vlSelf->top__DOT__datapath__DOT__datamem_write_data 
+                        >> 0x10U));
         __Vdlyvset__top__DOT__datapath__DOT__datamem__v1 = 1U;
         __Vdlyvdim0__top__DOT__datapath__DOT__datamem__v1 
             = (0x7fU & ((IData)(1U) + ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
@@ -128,8 +128,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if ((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])) {
         __Vdlyvval__top__DOT__datapath__DOT__datamem__v2 
-            = (0xffU & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                        >> 3U));
+            = (0xffU & (vlSelf->top__DOT__datapath__DOT__datamem_write_data 
+                        >> 8U));
         __Vdlyvset__top__DOT__datapath__DOT__datamem__v2 = 1U;
         __Vdlyvdim0__top__DOT__datapath__DOT__datamem__v2 
             = (0x7fU & ((IData)(2U) + ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
@@ -138,9 +138,7 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if ((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])) {
         __Vdlyvval__top__DOT__datapath__DOT__datamem__v3 
-            = (0xffU & ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                         << 5U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                   >> 0x1bU)));
+            = (0xffU & vlSelf->top__DOT__datapath__DOT__datamem_write_data);
         __Vdlyvset__top__DOT__datapath__DOT__datamem__v3 = 1U;
         __Vdlyvdim0__top__DOT__datapath__DOT__datamem__v3 
             = (0x7fU & ((IData)(3U) + ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
@@ -847,6 +845,14 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__0(Vtop___024root* vlSelf) {
                                                                     & ((IData)(4U) 
                                                                        + (IData)(vlSelf->top__DOT__datapath__DOT__PC))))));
     }
+    vlSelf->top__DOT__datapath__DOT__datamem_write_data 
+        = (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+            & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+               == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                            >> 0x16U)))) ? vlSelf->top__DOT__datapath__DOT__Alu2out
+            : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                << 5U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                          >> 0x1bU)));
     vlSelf->top__DOT__datapath__DOT__Alu1out = ((0x20000U 
                                                  & vlSelf->top__DOT__datapath__DOT__IdEx[5U])
                                                  ? 

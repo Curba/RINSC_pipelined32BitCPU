@@ -375,6 +375,14 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
         [__Vtableidx1];
     vlSelf->top__DOT__PCSrc = Vtop__ConstPool__TABLE_hdc11e6d5_0
         [__Vtableidx1];
+    vlSelf->top__DOT__datapath__DOT__datamem_write_data 
+        = (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+            & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+               == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                            >> 0x16U)))) ? vlSelf->top__DOT__datapath__DOT__Alu2out
+            : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                << 5U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                          >> 0x1bU)));
     vlSelf->top__DOT__datapath__DOT__Alu1out = ((0x20000U 
                                                  & vlSelf->top__DOT__datapath__DOT__IdEx[5U])
                                                  ? 
@@ -617,6 +625,7 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
         vlSelf->top__DOT__datapath__DOT__datamem[__Vi0] = VL_RAND_RESET_I(8);
     }
     vlSelf->top__DOT__datapath__DOT__datamem_data = VL_RAND_RESET_I(32);
+    vlSelf->top__DOT__datapath__DOT__datamem_write_data = VL_RAND_RESET_I(32);
     vlSelf->top__DOT__datapath__DOT__ForwardingA = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__datapath__DOT__ForwardingB = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__datapath__DOT__stall_flag = VL_RAND_RESET_I(1);

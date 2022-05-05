@@ -31,6 +31,7 @@ module datapath(input logic clk, reset,
     logic [1:0] ForwardingA;
 	logic [1:0] ForwardingB;
     logic  ForwardingC;
+	logic ForwardingD;
     logic stall_flag;
     logic PCenable;
     logic IfIdEN;
@@ -212,6 +213,11 @@ module datapath(input logic clk, reset,
             ForwardingC = 1;
         else
             ForwardingC = 0;
+
+		if (MemWb.rd !=0 && MemWb.rd == ExMem.rd)
+            ForwardingD = 1;
+        else
+            ForwardingD = 0;
     end
 
 	always_comb begin
@@ -343,7 +349,7 @@ module datapath(input logic clk, reset,
 
 	// Data	Memory Address
 	assign datamem_address = ExMem.Alu1out[6:0];
-    assign datamem_write_data = ExMem.db;
+    assign datamem_write_data = (ForwardingD) ? Alu2out:ExMem.db;
 
 	// Data Memory Write Logic
 	always @(posedge clk) begin
