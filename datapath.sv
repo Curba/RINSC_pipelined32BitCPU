@@ -61,6 +61,7 @@ module datapath(input logic clk, reset,
             PCenable = (branch_src != 1) ? 0:1;
             end
         else begin
+            PCenable = 1;
 			//IfIdEN = 1;
             flush = 0;
             end
