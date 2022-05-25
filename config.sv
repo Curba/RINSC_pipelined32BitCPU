@@ -1,7 +1,7 @@
 // This is a common configuration file for SystemVerilog macros to support the development
 // in  Computer Architecture / Organization courses at METU Northern Cyprus Campus.
 // Ali Muhtaroglu
-// 
+//
 
 //////////////////////////////////////////
 //              DRAM config             //
@@ -11,15 +11,15 @@
 `define DRAM_ADDRESS_SIZE   12
 `define DRAM_WORD_SIZE      32
 
-// Definition of DRAM Block Size in terms of 
-// # of Data Words. Block size is assumed same 
+// Definition of DRAM Block Size in terms of
+// # of Data Words. Block size is assumed same
 // for the full memory hierarchy.
 `define DRAM_BLOCK_SIZE           8
 
 // Definition of DRAM latencies in clock cycles
 `define DRAM_READ_ACCESS_TIME    8
 `define DRAM_WRITE_ACCESS_TIME   12
-`define DRAM_CYCLE_TIME           4     
+`define DRAM_CYCLE_TIME           4
 
 // Definition of DRAM file
 `define DRAM_HEX  "simple_test.hex"
@@ -32,7 +32,7 @@
 `define ICACHE_INDEX       3
 
 // number of blocks in cache
-`define ICACHE_SIZE        2**`ICACHE_INDEX 
+`define ICACHE_SIZE        2**`ICACHE_INDEX
 
 `define ITAGMSB            `DRAM_ADDRESS_SIZE-1  //tag msb
 `define ITAGLSB            8  //tag lsb
@@ -45,7 +45,7 @@
 `define DCACHE_INDEX       4
 
 // number of blocks in cache
-`define DCACHE_SIZE        2**`DCACHE_INDEX 
+`define DCACHE_SIZE        2**`DCACHE_INDEX
 
 `define DTAGMSB            `DRAM_ADDRESS_SIZE-1  //tag msb
 `define DTAGLSB            9  //tag lsb

@@ -6,10 +6,10 @@
 `include "constants.sv"
 
 module dram_array (
-    input [`DRAM_ADDRESS_SIZE-1:0]   address,
-    input 			    clock,
-    inout wire [`DRAM_WORD_SIZE-1:0] data,
-    input 			    wren
+    input [`DRAM_ADDRESS_SIZE-1:0]      address,
+    input 			                    clock,
+    inout wire [`DRAM_WORD_SIZE-1:0]    data,
+    input 			                    wren
 );
 
    logic [7:0] 			  mem[0:2**(`DRAM_ADDRESS_SIZE)-1];

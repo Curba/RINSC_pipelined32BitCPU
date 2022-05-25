@@ -7,18 +7,22 @@
 
 module dcache_controller (input  clock, reset,
     input [`DRAM_ADDRESS_SIZE-1:0]  dcache_address, // cpu request address (CPU->cache)
-    input [`DRAM_WORD_SIZE-1:0] 	  dcache_data_in, // cpu request data (CPU->cache)
+    input [`DRAM_WORD_SIZE-1:0] 	dcache_data_in, // cpu request data (CPU->cache)
     input [`DRAM_WORD_SIZE/8-1:0]   dcache_byte_en, // cpu request byte enable (CPU->cache)
-    input 			  dcache_rw, // cpu R/W request (CPU->cache)
-    input 			  dcache_valid, // cpu request valid (CPU->cache)
-    input [`DRAM_WORD_SIZE-1:0] 	  mem_data_in[`DRAM_BLOCK_SIZE-1:0], // memory read data (memory->cache)
-    input 			  mem_ready, // memory read data ready (memory->cache)
+    input 			                dcache_rw, // cpu R/W request (CPU->cache)
+    input 			                dcache_valid, // cpu request valid (CPU->cache)
+
+    output [`DRAM_WORD_SIZE-1:0] 	dcache_data_out, // data to CPU (cache->CPU)
+    output 			                dcache_data_ready // data to CPU ready (cache->CPU)
+
+    input [`DRAM_WORD_SIZE-1:0] 	mem_data_in[`DRAM_BLOCK_SIZE-1:0], // memory read data (memory->cache)
+    input 			                mem_ready, // memory read data ready (memory->cache)
+
     output [`DRAM_ADDRESS_SIZE-1:0] mem_address, // cache request address (cache->memory)
-    output [`DRAM_WORD_SIZE-1:0] 	  mem_data_out[`DRAM_BLOCK_SIZE-1:0], // memory write data (cache->memory)
-    output 			  mem_rw, // R/W request to memory (cache->memory)
-    output 			  mem_valid, // request to memory valid (cache->memory)
-    output [`DRAM_WORD_SIZE-1:0] 	  dcache_data_out, // data to CPU (cache->CPU)
-    output 			  dcache_data_ready // data to CPU ready (cache->CPU)
+    output [`DRAM_WORD_SIZE-1:0] 	mem_data_out[`DRAM_BLOCK_SIZE-1:0], // memory write data (cache->memory)
+    output 			                mem_rw, // R/W request to memory (cache->memory)
+    output 			                mem_valid, // request to memory valid (cache->memory)
+
     );
 
    // log2 function quite useful for parametric design

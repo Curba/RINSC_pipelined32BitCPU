@@ -6,12 +6,16 @@
 `include "constants.sv"
 
 module icache_controller (input  clock, reset,
+    //PC
     input [`DRAM_ADDRESS_SIZE-1:0]  icache_address, // cpu request address (CPU->cache)
     input 			                icache_valid, // cpu request valid (CPU->cache)
+
     input [`DRAM_WORD_SIZE-1:0] 	mem_data_in[`DRAM_BLOCK_SIZE-1:0], // memory read data (memory->cache)
     input 			                mem_ready, // memory read data ready (memory->cache)
+
     output [`DRAM_ADDRESS_SIZE-1:0] mem_address, // cache request address (cache->memory)
     output 			                mem_valid, // request to memory valid (cache->memory)
+
     output [`DRAM_WORD_SIZE-1:0] 	icache_data_out, // data to CPU (cache->CPU)
     output 			                icache_data_ready // data to CPU ready (cache->CPU)
     );
