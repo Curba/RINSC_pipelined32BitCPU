@@ -126,10 +126,10 @@ module dram_interface (
 
    dram dram (
     .reset             (reset),
-    .clock             (clock),
+        .clock             (clock),
 	.address           (address_to_mem_with_word_offset),
 	.data              (data_pin),
-    .write_enable      (we),
+        .write_enable      (we),
 	.read_enable       (re),
 	.write_data_enable (we_from_mem),
 	.read_data_enable  (re_from_mem),

@@ -8,6 +8,7 @@
 module data_cache_sram(
     input                           clock,
     input 			                we, // data request/command, e.g. RW input [`DCACHE_INDEX-1:0]    index, // cache index
+	input [`DCACHE_INDEX-1:0]       index, // cache index
     input [`DRAM_WORD_SIZE-1:0]     data_write[`DRAM_BLOCK_SIZE-1:0], //write port
     output [`DRAM_WORD_SIZE-1:0]    data_read[`DRAM_BLOCK_SIZE-1:0]); //read port
 

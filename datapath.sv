@@ -1,20 +1,37 @@
+`include "config.sv"
+`include "constants.sv"
+
 module datapath(input logic clk, reset,
                 input logic [3:0] MemWrite,
                 input logic [1:0] MemToReg,
                 input jump_flag,
-                 input logic RegWrite, PCSrc, MemSignExtend,
-                 input logic [1:0] branch_flag,
-                 input logic [3:0] MemRead,
+                input logic RegWrite, PCSrc, MemSignExtend,
+                input logic [1:0] branch_flag,
+                input logic [3:0] MemRead,
 				input logic [3:0] ALUOp,
                 input logic [1:0] ALUSrc,
                 input logic RbSelect,
                 input logic ALUOp2,
 				input logic double_jump_flag,
+
+                input logic icache_instrReady, // data to CPU ready (cache->CPU)
+                input logic [`DRAM_WORD_SIZE-1:0] 	icache_instruction, // data to CPU (cache->CPU)
+                output logic [`DRAM_ADDRESS_SIZE-1:0]  icache_PC, // cpu request address (CPU->cache)
+                output logic icache_instrRequest, // cpu request valid (CPU->cache)
+
+                input logic[`DRAM_WORD_SIZE-1:0] 	dcache_readData, // data to CPU (cache->CPU)
+                input logic dcache_data_ready, // data to CPU ready (cache->CPU)
+                output logic[`DRAM_ADDRESS_SIZE-1:0]  dcache_address, // cpu request address (CPU->cache)
+                output logic dcache_dataRequest, // cpu request valid (CPU->cache)
+                output logic dcache_rw, // cpu R/W request (CPU->cache)
+                output logic [`DRAM_WORD_SIZE-1:0] 	dcache_writeData, // cpu request data (CPU->cache)
+                output logic[`DRAM_WORD_SIZE/8-1:0]   dcache_byte_en, // cpu request byte enable (CPU->cache)
+
 				output logic [7:0] Op);
 
 
-	logic [6:0]PC;
-	logic [6:0] PCSTART; //starting address of instruction memory
+	logic [11:0]PC;
+	logic [11:0] PCSTART; //starting address of instruction memory
 	assign PCSTART = 0;
 
 	// Instruction memory internal storage, input address and output data bus signals
@@ -23,8 +40,8 @@ module datapath(input logic clk, reset,
     logic [31:0] instmem_data;
 
 	// Data memory internal storage, input address and output data bus signals
-	logic [7:0] datamem [127:0];
-	logic [6:0] datamem_address;
+	logic [11:0] datamem;
+	logic [11:0] datamem_address;
     logic [31:0] datamem_data;
     logic [31:0] datamem_write_data;
 
@@ -44,8 +61,9 @@ module datapath(input logic clk, reset,
     assign  branchex = ExMem.branch_flag;
 
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
-		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
+		if(((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
             ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+            || !icache_instrReady || !dcache_data_ready)
 			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
 			stall_flag = 1;
 			PCenable = 0;
@@ -72,13 +90,18 @@ module datapath(input logic clk, reset,
 	// You may refer to the first field in the structure as IfId.instruction for example
 	struct packed{
 		logic [31:0] instruction;
-		logic [6:0] PCincremented;
+		logic [11:0] PCincremented;
 	} IfId;
+
+    //Cache Logic
+
+    assign IfIdEN = icache_instrRequest;
+    assign icache_PC = PC;
 
 	always @ (posedge clk) begin
         if(IfIdEN)begin
-		IfId.instruction <= (flush) ? 0:instmem_data[31:0];
-		IfId.PCincremented <= PC+6'b100;
+		IfId.instruction <= (flush) ? 0:icache_instruction[31:0];
+		IfId.PCincremented <= PC+12'b100;
         end
 	end
 
@@ -106,7 +129,7 @@ module datapath(input logic clk, reset,
         case(MemWb.MemToReg)
             2'b00: RF_WriteData = MemWb.datamem_data;
             2'b01: RF_WriteData = MemWb.Alu2out;
-            2'b10: RF_WriteData = {{(25){1'b0}},MemWb.PCincremented};
+            2'b10: RF_WriteData = {{(20){1'b0}},MemWb.PCincremented};
             default: RF_WriteData = MemWb.datamem_data;
          endcase
 
@@ -130,7 +153,7 @@ module datapath(input logic clk, reset,
 		logic [3:0] MemRead;
 		logic [3:0] MemWrite;
 		logic RegWrite;
-		logic [6:0] PCincremented;
+		logic [11:0] PCincremented;
 		logic [31:0] da;
 		logic [31:0] db;
 		logic [31:0] dc;
@@ -263,7 +286,7 @@ module datapath(input logic clk, reset,
 	end
 
 	struct packed{
-		logic [6:0] PCincremented;
+		logic [11:0] PCincremented;
 		logic [3:0] MemRead;
 		logic [3:0] MemWrite;
         logic MemSignExtend;
@@ -326,7 +349,7 @@ module datapath(input logic clk, reset,
 	//memwb
 	struct packed{
 	    //control signals
-		logic [6:0] PCincremented;
+		logic [11:0] PCincremented;
 		logic RegWrite;
 		logic [1:0]MemToReg;
 		logic [31:0] datamem_data;
@@ -345,71 +368,73 @@ module datapath(input logic clk, reset,
 
 	end
 
+/*
 
-
-	// ... may have other declarations
-
-	// initialize instruction and data memory arrays
-	// this will read the .dat file in the same directory
-	// and initialize the memory accordingly.
 	initial
 		$readmemh("instruction_memory.dat", instmem);
 	initial
 		$readmemh("data_memory.dat", datamem);
 
 	// Instruction Memory Address
-	assign instmem_address = PC;
+	//assign instmem_address = PC;
 
 	// Instruction Memory Read Logic
+
 	assign instmem_data[31:24] = instmem[instmem_address];
 	assign instmem_data[23:16] = instmem[instmem_address+7'b1];
 	assign instmem_data[15:8] = instmem[instmem_address+7'b10];
 	assign instmem_data[7:0] = instmem[instmem_address+7'b11];
+     */
 
 	// Data	Memory Address
-	assign datamem_address = ExMem.Alu1out[6:0];
+	assign datamem_address = ExMem.Alu1out[11:0];
     assign datamem_write_data = (ForwardingD) ? MemWb.Alu2out:ExMem.db;
 
 	// Data Memory Write Logic
+    assign dcache_byte_en = ExMem.MemWrite;
+
 	always @(posedge clk) begin
-		if (ExMem.MemWrite[3])
-			datamem[datamem_address]   <= datamem_write_data[31:24];
-        if(ExMem.MemWrite[2])
-			datamem[datamem_address+1] <= datamem_write_data[23:16];
-        if(ExMem.MemWrite[1])
-			datamem[datamem_address+2] <= datamem_write_data[15:8];
-        if(ExMem.MemWrite[0])
-			datamem[datamem_address+3] <= datamem_write_data[7:0];
-            $writememh("data_memory.dat", datamem);
+			dcache_writeData   = datamem_write_data;
 		end
 
+
 	// Data Memory Read Logic
+    assign dcache_dataRequest = (ExMem.MemRead != 0) ? 1:0;
+    assign datamem_address = dcache_address;
+    assign datamem_data = dcache_readData;
+
     always_comb begin
-     datamem_data[7:0]    =   (ExMem.MemRead[0])? datamem[datamem_address+3]:8'bx;
-        if(ExMem.MemRead[1] == 0 && ExMem.MemSignExtend)
-            datamem_data[15:8] = {(8){datamem_data[7]}};
-         else if (ExMem.MemRead[1])
-            datamem_data[15:8] = datamem[datamem_address+2];
-         else
-            datamem_data[15:8] = 8'b0;
+        if(dcache_data_ready)begin
+            datamem_data[7:0]  =   (ExMem.MemRead[0])? dcache_readData[7:0]:8'bx;
+            if(ExMem.MemRead[1] == 0 && ExMem.MemSignExtend)
+                datamem_data[15:8] = {(8){datamem_data[7]}};
+             else if (ExMem.MemRead[1])
+                datamem_data[15:8] = dcache_readData[15:8];
+             else
+                datamem_data[15:8] = 8'b0;
 
-         if(ExMem.MemRead[2] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
-             datamem_data[23:16] = {(8){datamem_data[7]}};
-         else if (ExMem.MemRead[2] == 0 && ExMem.MemSignExtend)
-             datamem_data[23:16] = {(8){datamem_data[15]}};
-         else if(ExMem.MemRead[2])
-            datamem_data[23:16] = datamem[datamem_address+1];
-         else
-             datamem_data[23:16] = 8'b0;
+             if(ExMem.MemRead[2] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
+                 datamem_data[23:16] = {(8){datamem_data[7]}};
+             else if (ExMem.MemRead[2] == 0 && ExMem.MemSignExtend)
+                 datamem_data[23:16] = {(8){datamem_data[15]}};
+             else if(ExMem.MemRead[2])
+                datamem_data[23:16] = dcache_readData[23:16];
+             else
+                 datamem_data[23:16] = 8'b0;
 
-         if(ExMem.MemRead[3] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
-             datamem_data[31:24] = {(8){datamem_data[7]}};
-         else if (ExMem.MemRead[3] == 0 && ExMem.MemSignExtend)
-             datamem_data[31:24] = {(8){datamem_data[15]}};
-         else if(ExMem.MemRead[3])
-             datamem_data[31:24] = datamem[datamem_address];
-         else
-             datamem_data[31:24] = 8'b0;
+             if(ExMem.MemRead[3] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
+                 datamem_data[31:24] = {(8){datamem_data[7]}};
+             else if (ExMem.MemRead[3] == 0 && ExMem.MemSignExtend)
+                 datamem_data[31:24] = {(8){datamem_data[15]}};
+             else if(ExMem.MemRead[3])
+                 datamem_data[31:24] = dcache_readData[31:24];
+             else
+                 datamem_data[31:24] = 8'b0;
+            end
+        else begin
+            datamem_data[31:0] = 32'bx;
+            end
+
      end
 
 	//PC logic
@@ -418,9 +443,9 @@ module datapath(input logic clk, reset,
 		if(reset)
 			PC <= PCSTART;
         else if(PCenable)
-		    PC <= (branch_src) ? ExMem.branch_addr[6:0]: (PCSrc ? JumpAddress[6:0]:(double_jump ? PC+7'b1100:PC+7'b100));
+		    PC <= (branch_src) ? ExMem.branch_addr[11:0]: (PCSrc ? JumpAddress[11:0]:(double_jump ? PC+12'b1100:PC+12'b100));
 
-		
+
 
     end
 endmodule

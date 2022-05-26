@@ -13,7 +13,7 @@ module dcache_controller (input  clock, reset,
     input 			                dcache_valid, // cpu request valid (CPU->cache)
 
     output [`DRAM_WORD_SIZE-1:0] 	dcache_data_out, // data to CPU (cache->CPU)
-    output 			                dcache_data_ready // data to CPU ready (cache->CPU)
+    output 			                dcache_data_ready, // data to CPU ready (cache->CPU)
 
     input [`DRAM_WORD_SIZE-1:0] 	mem_data_in[`DRAM_BLOCK_SIZE-1:0], // memory read data (memory->cache)
     input 			                mem_ready, // memory read data ready (memory->cache)
@@ -21,7 +21,7 @@ module dcache_controller (input  clock, reset,
     output [`DRAM_ADDRESS_SIZE-1:0] mem_address, // cache request address (cache->memory)
     output [`DRAM_WORD_SIZE-1:0] 	mem_data_out[`DRAM_BLOCK_SIZE-1:0], // memory write data (cache->memory)
     output 			                mem_rw, // R/W request to memory (cache->memory)
-    output 			                mem_valid, // request to memory valid (cache->memory)
+    output 			                mem_valid // request to memory valid (cache->memory)
 
     );
 
@@ -137,13 +137,13 @@ module dcache_controller (input  clock, reset,
 
               /*write hit*/
               if (dcache_rw) begin
-		 /*read/modify cache line*/
-		 dcache_tag_we = '1; dcache_sram_we = '1;
-		 /*no change in tag*/
-		 dcache_tag_write =  dcache_tag_read;
-		 dcache_valid_write = '1;
-		 /*cache line is dirty*/
-		 dcache_dirty_write = '1;
+                 /*read/modify cache line*/
+                 dcache_tag_we = '1; dcache_sram_we = '1;
+                 /*no change in tag*/
+                 dcache_tag_write =  dcache_tag_read;
+                 dcache_valid_write = '1;
+                 /*cache line is dirty*/
+                 dcache_dirty_write = '1;
               end
               /*ﬁnished*/
               nstate = compare_tag;
@@ -162,16 +162,16 @@ module dcache_controller (input  clock, reset,
               mem_request_valid = '1;
               /*compulsory miss or miss with clean block*/
               if (dcache_valid_read == 1'b0 || dcache_dirty_read == 1'b0)
-		/*wait till a new block is allocated*/
-		nstate = allocate;
-	      else begin
-		 /*miss with dirty line*/
-		 /*write back address*/
-		 mem_request_address = {dcache_tag_read, dcache_address[`DTAGLSB-1:0]};
-		 mem_request_rw = '1;
-		 /*wait till write is completed*/
-		 nstate = write_back;
-	      end
+                /*wait till a new block is allocated*/
+                nstate = allocate;
+              else begin
+                 /*miss with dirty line*/
+                 /*write back address*/
+                 mem_request_address = {dcache_tag_read, dcache_address[`DTAGLSB-1:0]};
+                 mem_request_rw = '1;
+                 /*wait till write is completed*/
+                 nstate = write_back;
+              end
 	   end
 	end
 	// state for allocating a new cache line before proceeding
