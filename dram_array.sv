@@ -22,10 +22,10 @@ module dram_array (
 //   genvar i;
 //   generate
 //      for (i=0; i < `DRAM_WORD_SIZE/8; i++) begin
-			assign data[7:0] = (wren==0) ? mem[address] : (wren==1) ? 8'bz : 8'bx;
-			assign data[15:8] = (wren==0) ? mem[address+1] : (wren==1) ? 8'bz : 8'bx;
-			assign data[23:16] = (wren==0) ? mem[address+2] : (wren==1) ? 8'bz : 8'bx;
-			assign data[31:24] = (wren==0) ? mem[address+3] : (wren==1) ? 8'bz : 8'bx;			
+			assign data[31:24] = (wren==0) ? mem[address] : (wren==1) ? 8'bz : 8'bx;			
+			assign data[23:16] = (wren==0) ? mem[address+1] : (wren==1) ? 8'bz : 8'bx;
+			assign data[15:8] = (wren==0) ? mem[address+2] : (wren==1) ? 8'bz : 8'bx;
+			assign data[7:0] = (wren==0) ? mem[address+3] : (wren==1) ? 8'bz : 8'bx;
 			// removed the following two lines for quartus:
 //			end
 //   endgenerate
@@ -41,10 +41,10 @@ module dram_array (
 				if (wren) begin
 //					mem[address+j] <= din[(j+1)*8-1:j*8];
                // changed for Quartus as the following 4 lines:
-				    mem[address] <= din[7:0];
-				    mem[address+1] <= din[15:8];
-				    mem[address+2] <= din[23:16];
-				    mem[address+3] <= din[31:24];
+				    mem[address] <= din[31:24];
+				    mem[address+1] <= din[23:16];
+				    mem[address+2] <= din[15:8];
+				    mem[address+3] <= din[7:0];
 				end
             // removed following 2 lines for Quartus
 	//	end

@@ -27,6 +27,7 @@ module datapath(input logic clk, reset,
                 output logic [`DRAM_WORD_SIZE-1:0] 	dcache_writeData, // cpu request data (CPU->cache)
                 output logic[`DRAM_WORD_SIZE/8-1:0]   dcache_byte_en, // cpu request byte enable (CPU->cache)
 
+                input logic transfer_in_progress,
 				output logic [7:0] Op);
 
 
@@ -56,17 +57,18 @@ module datapath(input logic clk, reset,
     logic IfIdEN;
     logic flush;
 
-    logic [1:0]branchId;
+    logi [1:0]branchId;
     logic [1:0] branchex;
     assign  branchId = IdEx.branch_flag;
     assign  branchex = ExMem.branch_flag;
 
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
+
 		if(((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
             ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
-            || !icache_instrReady)
-			//|| !dcache_data_ready)
-			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
+            || (dcache_dataRequest && !dcache_data_ready)
+            || (icache_instrRequest && !icache_instrReady) || transfer_in_progress)
+            begin
 			stall_flag = 1;
 			PCenable = 0;
 			IfIdEN = 0;
@@ -76,18 +78,15 @@ module datapath(input logic clk, reset,
 			PCenable = 1;
 			IfIdEN = 1;
 			end
-/*
+
         if(jump_flag != 0 || branch_flag != 0 || IdEx.branch_flag != 0 || ExMem.branch_flag != 0)begin
             flush = 1;
             PCenable = (jump_flag != 0 || branch_src != 0) ? 1:0;
             end
-        else begin
-            PCenable = 1;
-			//IfIdEN = 1;
+        else
             flush = 0;
-            end
-*/
         end
+
 	// IF/ID Pipeline staging register fields can be represented using structure format of System Verilog
 	// You may refer to the first field in the structure as IfId.instruction for example
 	struct packed{

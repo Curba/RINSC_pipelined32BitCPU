@@ -35,12 +35,15 @@ VL_MODULE(Vtop___024root) {
         CData/*0:0*/ top__DOT__jump_flag;
         CData/*0:0*/ top__DOT__double_jump_flag;
         CData/*0:0*/ top__DOT__dcache_rw;
+        CData/*0:0*/ top__DOT__transfer_in_progress;
         CData/*1:0*/ top__DOT__datapath__DOT__ForwardingA;
         CData/*1:0*/ top__DOT__datapath__DOT__ForwardingB;
         CData/*0:0*/ top__DOT__datapath__DOT__stall_flag;
+        CData/*0:0*/ top__DOT__datapath__DOT__PCenable;
         CData/*0:0*/ top__DOT__datapath__DOT__IfIdEN;
         CData/*0:0*/ top__DOT__datapath__DOT__flush;
         CData/*0:0*/ top__DOT__datapath__DOT__zero_flag;
+        CData/*0:0*/ top__DOT__datapath__DOT__branch_src;
         CData/*0:0*/ top__DOT__memory__DOT__mem_ready_icache;
         CData/*1:0*/ top__DOT__memory__DOT__icache_controller__DOT__nstate;
         CData/*1:0*/ top__DOT__memory__DOT__icache_controller__DOT__cstate;
@@ -75,11 +78,11 @@ VL_MODULE(Vtop___024root) {
         CData/*0:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we;
         CData/*0:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__re;
         CData/*2:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
+    };
+    struct {
         CData/*1:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count;
         CData/*2:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count;
         CData/*2:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
-    };
-    struct {
         CData/*0:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_port1_busy;
         CData/*0:0*/ __VinpClk__TOP__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__acknowledge;
         CData/*0:0*/ __VinpClk__TOP__top__DOT__memory__DOT__icache_controller__DOT__mem_request_valid;
@@ -141,11 +144,11 @@ VL_MODULE(Vtop___024root) {
         VlWide<7>/*201:0*/ top__DOT__datapath__DOT__IdEx;
         VlWide<5>/*148:0*/ top__DOT__datapath__DOT__ExMem;
         VlWide<3>/*83:0*/ top__DOT__datapath__DOT__MemWb;
+    };
+    struct {
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
         QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line;
-    };
-    struct {
         QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line;
         VlUnpacked<IData/*31:0*/, 32> top__DOT__datapath__DOT__RF;
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in;

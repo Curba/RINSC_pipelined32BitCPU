@@ -35,6 +35,8 @@ module top (
     logic [`DRAM_WORD_SIZE/8-1:0]   dcache_byte_en;
     logic [`DRAM_WORD_SIZE-1:0] 	dcache_readData;
     logic 			                dcache_data_ready;
+    logic                           transfer_in_progress;
+
 control ctr(
     .Op         (Op),
     .AluSrc     (ALUSrc),
@@ -85,7 +87,9 @@ datapath datapath(
     .dcache_writeData       (dcache_writeData),
     .dcache_byte_en         (dcache_byte_en),
     .dcache_readData        (dcache_readData),
-    .dcache_data_ready      (dcache_data_ready)
+    .dcache_data_ready      (dcache_data_ready),
+
+    .transfer_in_progress   (transfer_in_progress)
 );
 
 memory memory(
@@ -105,6 +109,7 @@ memory memory(
     .dcache_writeData       (dcache_writeData), // cpu request data (CPU->cache)
     .dcache_byte_en         (dcache_byte_en), // cpu request byte enable (CPU->cache)
     .dcache_readData        (dcache_readData), // data to CPU (cache->CPU)
-    .dcache_data_ready      (dcache_data_ready) // data to CPU ready (cache->CPU)
+    .dcache_data_ready      (dcache_data_ready), // data to CPU ready (cache->CPU)
+    .transfer_in_progress   (transfer_in_progress)
     );
 endmodule

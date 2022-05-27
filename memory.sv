@@ -17,7 +17,8 @@ module memory(input  clock, reset,
     input [`DRAM_WORD_SIZE-1:0] 	dcache_writeData, // cpu request data (CPU->cache)
     input [`DRAM_WORD_SIZE/8-1:0]   dcache_byte_en, // cpu request byte enable (CPU->cache)
     output [`DRAM_WORD_SIZE-1:0] 	dcache_readData, // data to CPU (cache->CPU)
-    output 			                dcache_data_ready // data to CPU ready (cache->CPU)
+    output 			                dcache_data_ready, // data to CPU ready (cache->CPU)
+    output                          transfer_in_progress
     );
 
     logic mem_ready_icache;
@@ -72,7 +73,6 @@ logic dcache_blockRequest, dcache_blockReady, dcache_mem_rw;
 logic [`DRAM_ADDRESS_SIZE-1:0] dcache_blockAddress;
 logic [`DRAM_WORD_SIZE-1:0]     dcache_readBlock [`DRAM_BLOCK_SIZE-1:0];
 logic [`DRAM_WORD_SIZE-1:0]     dcache_wbBlock [`DRAM_BLOCK_SIZE-1:0];
-logic transfer_in_progress;
 
 /* verilator lint_off PINMISSING */
 dram_controller dram_controller(
