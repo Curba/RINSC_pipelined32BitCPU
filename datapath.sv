@@ -33,11 +33,12 @@ module datapath(input logic clk, reset,
 	logic [11:0]PC;
 	logic [11:0] PCSTART; //starting address of instruction memory
 	assign PCSTART = 0;
-
+/*
 	// Instruction memory internal storage, input address and output data bus signals
 	logic [7:0] instmem [127:0];
 	logic [6:0] instmem_address;
     logic [31:0] instmem_data;
+	*/
 
 	// Data memory internal storage, input address and output data bus signals
 	logic [11:0] datamem;
@@ -63,7 +64,8 @@ module datapath(input logic clk, reset,
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
 		if(((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
             ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
-            || !icache_instrReady || !dcache_data_ready)
+            || !icache_instrReady)
+			//|| !dcache_data_ready)
 			begin // Stall If IfId Rs and IdEx is the same or IdEx Rt IfId rt is same, set control bits to 0
 			stall_flag = 1;
 			PCenable = 0;
@@ -74,7 +76,7 @@ module datapath(input logic clk, reset,
 			PCenable = 1;
 			IfIdEN = 1;
 			end
-
+/*
         if(jump_flag != 0 || branch_flag != 0 || IdEx.branch_flag != 0 || ExMem.branch_flag != 0)begin
             flush = 1;
             PCenable = (jump_flag != 0 || branch_src != 0) ? 1:0;
@@ -84,7 +86,7 @@ module datapath(input logic clk, reset,
 			//IfIdEN = 1;
             flush = 0;
             end
-
+*/
         end
 	// IF/ID Pipeline staging register fields can be represented using structure format of System Verilog
 	// You may refer to the first field in the structure as IfId.instruction for example
@@ -94,8 +96,8 @@ module datapath(input logic clk, reset,
 	} IfId;
 
     //Cache Logic
-
-    assign IfIdEN = icache_instrRequest;
+	assign icache_instrRequest = 1;
+ //   assign IfIdEN = icache_instrRequest;
     assign icache_PC = PC;
 
 	always @ (posedge clk) begin
