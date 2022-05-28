@@ -57,7 +57,7 @@ module datapath(input logic clk, reset,
     logic IfIdEN;
     logic flush;
 
-    logi [1:0]branchId;
+    logic [1:0]branchId;
     logic [1:0] branchex;
     assign  branchId = IdEx.branch_flag;
     assign  branchex = ExMem.branch_flag;
@@ -401,8 +401,9 @@ module datapath(input logic clk, reset,
 
 	// Data Memory Read Logic
     assign dcache_dataRequest = (ExMem.MemRead != 0) ? 1:0;
-    assign datamem_address = dcache_address;
+    assign dcache_address = datamem_address;
     assign datamem_data = dcache_readData;
+    assign dcache_rw = (ExMem.MemWrite != 0) ? 1:0;
 
     always_comb begin
         if(dcache_data_ready)begin
