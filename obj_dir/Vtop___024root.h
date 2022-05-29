@@ -105,14 +105,12 @@ VL_MODULE(Vtop___024root) {
         SData/*11:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem;
         SData/*11:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset;
         IData/*31:0*/ top__DOT__dcache_writeData;
-        IData/*31:0*/ top__DOT__datapath__DOT__datamem_data;
         IData/*31:0*/ top__DOT__datapath__DOT__RF_WriteData;
         IData/*31:0*/ top__DOT__datapath__DOT__alu1in_a;
         IData/*31:0*/ top__DOT__datapath__DOT__alu1in_b;
         IData/*31:0*/ top__DOT__datapath__DOT__Alu1out;
         IData/*31:0*/ top__DOT__datapath__DOT__Alu2out;
         IData/*31:0*/ top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__unnamedblk1__DOT__i;
-        IData/*31:0*/ top__DOT__memory__DOT__dcache_controller__DOT__dcache_data_to_cpu;
         IData/*31:0*/ top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp;
         IData/*31:0*/ top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__unnamedblk1__DOT__i;
         IData/*31:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_pin;
@@ -144,10 +142,10 @@ VL_MODULE(Vtop___024root) {
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
         QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line;
-    };
-    struct {
         QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line;
         VlUnpacked<IData/*31:0*/, 32> top__DOT__datapath__DOT__RF;
+    };
+    struct {
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in;
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out;
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in;
@@ -183,7 +181,7 @@ VL_MODULE(Vtop___024root) {
         VlUnpacked<CData/*7:0*/, 4096> top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem;
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem;
         VlUnpacked<CData/*7:0*/, 4096> top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem;
-        VlUnpacked<CData/*0:0*/, 5> __Vm_traceActivity;
+        VlUnpacked<CData/*0:0*/, 6> __Vm_traceActivity;
     };
 
     // INTERNAL VARIABLES

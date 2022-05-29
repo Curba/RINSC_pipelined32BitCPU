@@ -193,23 +193,47 @@ module datapath(input logic clk, reset,
             IdEx.double_jump_flag <= double_jump_flag;
         end
         else begin
-            IdEx.rd <= 0;
-            IdEx.signextend <= 0;
+            IdEx.MemSignExtend <= IdEx.MemSignExtend;
+            IdEx.ALUSrc <= IdEx.ALUSrc;
+            IdEx.ALUOp <= IdEx.ALUOp;
+            IdEx.ALUOp2 <= IdEx.ALUOp2;
+            IdEx.MemRead <= IdEx.MemRead;
+            IdEx.MemWrite <= IdEx.MemWrite;
+            IdEx.MemToReg <= IdEx.MemToReg;
+            IdEx.RegWrite <= IdEx.RegWrite;
+            IdEx.PCincremented <= IdEx.PCincremented;
+            IdEx.branch_addr <= IdEx.branch_addr;
+            IdEx.branch_flag <= IdEx.branch_flag;
+            IdEx.da	<= IdEx.da;
+            IdEx.db	<= IdEx.db;
+            IdEx.dc	<= IdEx.dc;
+            IdEx.shamt <= IdEx.shamt;
+            IdEx.rd <= IdEx.rd;
+            IdEx.signextend <= IdEx.signextend;
+            IdEx.ra <= IdEx.ra;
+            IdEx.rb <= IdEx.rb;
+            IdEx.rc <= IdEx.rc;
+            IdEx.RbSelect <= IdEx.RbSelect;
+            IdEx.double_jump_flag <= IdEx.double_jump_flag;
+
+  //          IdEx.rd <= 0;
+   //         IdEx.signextend <= 0;
             IdEx.ra <= 0;
-            IdEx.rb <= 0;
+  //          IdEx.rb <= 0;
             IdEx.rc <= 0;
-            IdEx.ALUSrc <= 0;
+            //IdEx.ALUSrc <= 0;
             IdEx.ALUOp <= 0;
             IdEx.ALUOp2 <= 0;
             IdEx.MemRead <= 0;
             IdEx.MemWrite <= 0;
             IdEx.MemToReg <= 0;
-            IdEx.RegWrite <= 0;
+//           IdEx.RegWrite <= 0;
             IdEx.MemSignExtend <= 0;
             IdEx.branch_flag <= 0;
 			IdEx.RbSelect <= 0;
 			IdEx.double_jump_flag <= 0;
         end
+
 	end
 
 	// Execute Stage Variables
@@ -330,12 +354,7 @@ module datapath(input logic clk, reset,
 
 	// Ex Mem Stage
 	always @ (posedge clk) begin
-        //if(!stall_flag)begin
-            ExMem.rd <= IdEx.rd;
-            ExMem.rc <= IdEx.rc;
-        //end
-            ExMem.db <= IdEx.db;
-            ExMem.dc <= IdEx.dc;
+        if(!stall_flag)begin
             ExMem.PCincremented <= IdEx.PCincremented;
             ExMem.MemSignExtend <= IdEx.MemSignExtend;
             ExMem.MemRead <= IdEx.MemRead;
@@ -344,10 +363,35 @@ module datapath(input logic clk, reset,
             ExMem.MemToReg <= IdEx.MemToReg;
             ExMem.Alu1out <= Alu1out;
             ExMem.ALUOp2 <= IdEx.ALUOp2;
+            ExMem.db <= IdEx.db;
+            ExMem.dc <= IdEx.dc;
+            ExMem.rc <= IdEx.rc;
             ExMem.zero_flag <= zero_flag;
             ExMem.branch_flag <= IdEx.branch_flag;
             ExMem.branch_addr <= IdEx.branch_addr;
             ExMem.double_jump_flag <= IdEx.double_jump_flag;
+            ExMem.rd <= IdEx.rd;
+        end
+        else
+            begin
+            ExMem.PCincremented <= ExMem.PCincremented;
+            ExMem.MemSignExtend <= ExMem.MemSignExtend;
+            ExMem.MemRead <= ExMem.MemRead;
+            ExMem.MemWrite <= ExMem.MemWrite;
+            ExMem.RegWrite <= ExMem.RegWrite;
+            ExMem.MemToReg <= ExMem.MemToReg;
+            ExMem.Alu1out <= ExMem.Alu1out;
+            ExMem.ALUOp2 <= ExMem.ALUOp2;
+            ExMem.db <= ExMem.db;
+            ExMem.dc <= ExMem.dc;
+            ExMem.rc <= ExMem.rc;
+            ExMem.zero_flag <= ExMem.zero_flag;
+            ExMem.branch_flag <= ExMem.branch_flag;
+            ExMem.branch_addr <= ExMem.branch_addr;
+            ExMem.double_jump_flag <= ExMem.double_jump_flag;
+            ExMem.rd <= ExMem.rd;
+            end
+
 	end
 
 	logic [31:0] alu2in_a;
@@ -384,14 +428,22 @@ module datapath(input logic clk, reset,
 	} MemWb;
 
 	always @ (posedge clk) begin
-//        if(!stall_flag)begin
+        if(!stall_flag)begin
             MemWb.PCincremented <= ExMem.PCincremented;
             MemWb.RegWrite <= ExMem.RegWrite;
             MemWb.MemToReg <= ExMem.MemToReg;
             MemWb.datamem_data <= datamem_data;
             MemWb.Alu2out <= Alu2out;
             MemWb.rd <= ExMem.rd;
- //       end
+        end
+        else begin
+            MemWb.PCincremented <= MemWb.PCincremented;
+            MemWb.RegWrite <= MemWb.RegWrite;
+            MemWb.MemToReg <= MemWb.MemToReg;
+            MemWb.datamem_data <= MemWb.datamem_data;
+            MemWb.Alu2out <= MemWb.Alu2out;
+            MemWb.rd <= MemWb.rd;
+            end
 	end
 
 /*
@@ -430,6 +482,7 @@ module datapath(input logic clk, reset,
     assign datamem_data = dcache_readData;
     assign dcache_rw = (ExMem.MemWrite != 0) ? 1:0;
 
+    /*
     always_comb begin
         if(dcache_data_ready)begin
             datamem_data[7:0]  =   (ExMem.MemRead[0])? dcache_readData[7:0]:8'bx;
@@ -463,6 +516,7 @@ module datapath(input logic clk, reset,
             end
 
      end
+     */
 
 	//PC logic
 
