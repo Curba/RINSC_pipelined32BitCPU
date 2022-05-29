@@ -61,8 +61,21 @@ module datapath(input logic clk, reset,
     logic [1:0] branchex;
     assign  branchId = IdEx.branch_flag;
     assign  branchex = ExMem.branch_flag;
+    logic mem_stall_flag;
+    logic dummy_flag;
 
     always_comb  begin// data hazard detection and forward , control hazard detection and flush
+
+            if((dcache_dataRequest && !dcache_data_ready) || (icache_instrRequest && !icache_instrReady) || transfer_in_progress)
+                mem_stall_flag = 1;
+            else
+                mem_stall_flag = 0;
+
+		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
+            ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+                dummy_flag = 1;
+            else
+                dummy_flag =0;
 
 		if(((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
             ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
@@ -168,29 +181,29 @@ module datapath(input logic clk, reset,
 	} IdEx;
 
 	always @ (posedge clk) begin
-        if(!stall_flag)begin
-            IdEx.MemSignExtend <= MemSignExtend;
-            IdEx.ALUSrc <= ALUSrc;
-            IdEx.ALUOp <= ALUOp;
-            IdEx.ALUOp2 <= ALUOp2;
-            IdEx.MemRead <= MemRead;
-            IdEx.MemWrite <= MemWrite;
-            IdEx.MemToReg <= MemToReg;
-            IdEx.RegWrite <= RegWrite;
-            IdEx.PCincremented <= IfId.PCincremented;
-            IdEx.branch_addr <= IfId.instruction [21:8];
-            IdEx.branch_flag <= branch_flag;
-            IdEx.da	<= da;
-            IdEx.db	<= db;
-            IdEx.dc	<= dc;
-            IdEx.shamt <= IfId.instruction[16:12];
-            IdEx.rd <= IfId.instruction[31:27];
-            IdEx.signextend <= { {(18){IfId.instruction [21]}},IfId.instruction [21:8] };
-            IdEx.ra <= IfId.instruction[26:22];
-            IdEx.rb <= (RbSelect) ? IfId.instruction[31:27]:IfId.instruction[21:17];
-            IdEx.rc <= IfId.instruction[16:12];
-            IdEx.RbSelect <= RbSelect;
-            IdEx.double_jump_flag <= double_jump_flag;
+        if(mem_stall_flag == 0 || (mem_stall_flag == 1 && dummy_flag == 1))begin
+        IdEx.MemSignExtend <= MemSignExtend;
+		IdEx.ALUSrc <= ALUSrc;
+		IdEx.ALUOp <= ALUOp;
+		IdEx.ALUOp2 <= ALUOp2;
+		IdEx.MemRead <= MemRead;
+		IdEx.MemWrite <= MemWrite;
+		IdEx.MemToReg <= MemToReg;
+		IdEx.RegWrite <= RegWrite;
+		IdEx.PCincremented <= IfId.PCincremented;
+        IdEx.branch_addr <= IfId.instruction [21:8];
+        IdEx.branch_flag <= branch_flag;
+		IdEx.da	<= da;
+		IdEx.db	<= db;
+		IdEx.dc	<= dc;
+		IdEx.shamt <= IfId.instruction[16:12];
+		IdEx.rd <= IfId.instruction[31:27];
+		IdEx.signextend <= { {(18){IfId.instruction [21]}},IfId.instruction [21:8] };
+        IdEx.ra <= IfId.instruction[26:22];
+        IdEx.rb <= (RbSelect) ? IfId.instruction[31:27]:IfId.instruction[21:17];
+        IdEx.rc <= IfId.instruction[16:12];
+		IdEx.RbSelect <= RbSelect;
+		IdEx.double_jump_flag <= double_jump_flag;
         end
         else begin
             IdEx.MemSignExtend <= IdEx.MemSignExtend;
@@ -233,7 +246,6 @@ module datapath(input logic clk, reset,
 			IdEx.RbSelect <= 0;
 			IdEx.double_jump_flag <= 0;
         end
-
 	end
 
 	// Execute Stage Variables
@@ -354,7 +366,7 @@ module datapath(input logic clk, reset,
 
 	// Ex Mem Stage
 	always @ (posedge clk) begin
-        if(!stall_flag)begin
+        if(mem_stall_flag == 0 || (mem_stall_flag == 1 && dummy_flag == 1))begin
             ExMem.PCincremented <= IdEx.PCincremented;
             ExMem.MemSignExtend <= IdEx.MemSignExtend;
             ExMem.MemRead <= IdEx.MemRead;
@@ -428,7 +440,7 @@ module datapath(input logic clk, reset,
 	} MemWb;
 
 	always @ (posedge clk) begin
-        if(!stall_flag)begin
+        if(mem_stall_flag == 0 || (mem_stall_flag == 1 && dummy_flag == 1))begin
             MemWb.PCincremented <= ExMem.PCincremented;
             MemWb.RegWrite <= ExMem.RegWrite;
             MemWb.MemToReg <= ExMem.MemToReg;
@@ -519,7 +531,6 @@ module datapath(input logic clk, reset,
      */
 
 	//PC logic
-
 	always@ (posedge clk)begin
 		if(reset)
 			PC <= PCSTART;

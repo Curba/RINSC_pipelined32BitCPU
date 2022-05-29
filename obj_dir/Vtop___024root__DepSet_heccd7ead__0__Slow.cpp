@@ -1306,6 +1306,32 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
                                                  != 
                                                  (0x18000U 
                                                   & vlSelf->top__DOT__datapath__DOT__ExMem[0U])));
+    vlSelf->top__DOT__datapath__DOT__dummy_flag = (
+                                                   (0U 
+                                                    != 
+                                                    (0xfU 
+                                                     & (vlSelf->top__DOT__datapath__DOT__IdEx[5U] 
+                                                        >> 0xdU))) 
+                                                   & (((0x1fU 
+                                                        & (vlSelf->top__DOT__datapath__DOT__IdEx[0U] 
+                                                           >> 0x17U)) 
+                                                       == 
+                                                       (0x1fU 
+                                                        & (IData)(
+                                                                  (vlSelf->top__DOT__datapath__DOT__IfId 
+                                                                   >> 0x22U)))) 
+                                                      | ((0x1fU 
+                                                          & (vlSelf->top__DOT__datapath__DOT__IdEx[0U] 
+                                                             >> 0x17U)) 
+                                                         == 
+                                                         (0x1fU 
+                                                          & ((IData)(vlSelf->top__DOT__RbSelect)
+                                                              ? (IData)(
+                                                                        (vlSelf->top__DOT__datapath__DOT__IfId 
+                                                                         >> 0x27U))
+                                                              : (IData)(
+                                                                        (vlSelf->top__DOT__datapath__DOT__IfId 
+                                                                         >> 0x1dU)))))));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_pin 
         = (((((((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out0 
                  & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en0) 
@@ -1330,6 +1356,12 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_write_enable 
         = ((IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_rw) 
            & (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_port2_busy));
+    vlSelf->top__DOT__datapath__DOT__mem_stall_flag 
+        = (1U & (((((0U != (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[4U] 
+                                    >> 5U))) ? 1U : 0U) 
+                   & (~ (IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_data_to_cpu_ready))) 
+                  | (~ (IData)(vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_data_to_cpu_ready))) 
+                 | (IData)(vlSelf->top__DOT__transfer_in_progress)));
     vlSelf->top__DOT__datapath__DOT__IfIdEN = (1U & 
                                                (~ (
                                                    ((((0U 
@@ -1367,42 +1399,6 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
                                                         & (~ (IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_data_to_cpu_ready)))) 
                                                     | (~ (IData)(vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_data_to_cpu_ready))) 
                                                    | (IData)(vlSelf->top__DOT__transfer_in_progress))));
-    vlSelf->top__DOT__datapath__DOT__stall_flag = (1U 
-                                                   & (((((0U 
-                                                          != 
-                                                          (0xfU 
-                                                           & (vlSelf->top__DOT__datapath__DOT__IdEx[5U] 
-                                                              >> 0xdU))) 
-                                                         & (((0x1fU 
-                                                              & (vlSelf->top__DOT__datapath__DOT__IdEx[0U] 
-                                                                 >> 0x17U)) 
-                                                             == 
-                                                             (0x1fU 
-                                                              & (IData)(
-                                                                        (vlSelf->top__DOT__datapath__DOT__IfId 
-                                                                         >> 0x22U)))) 
-                                                            | ((0x1fU 
-                                                                & (vlSelf->top__DOT__datapath__DOT__IdEx[0U] 
-                                                                   >> 0x17U)) 
-                                                               == 
-                                                               (0x1fU 
-                                                                & ((IData)(vlSelf->top__DOT__RbSelect)
-                                                                    ? (IData)(
-                                                                              (vlSelf->top__DOT__datapath__DOT__IfId 
-                                                                               >> 0x27U))
-                                                                    : (IData)(
-                                                                              (vlSelf->top__DOT__datapath__DOT__IfId 
-                                                                               >> 0x1dU))))))) 
-                                                        | (((0U 
-                                                             != 
-                                                             (0xfU 
-                                                              & (vlSelf->top__DOT__datapath__DOT__ExMem[4U] 
-                                                                 >> 5U)))
-                                                             ? 1U
-                                                             : 0U) 
-                                                           & (~ (IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_data_to_cpu_ready)))) 
-                                                       | (~ (IData)(vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_data_to_cpu_ready))) 
-                                                      | (IData)(vlSelf->top__DOT__transfer_in_progress)));
     vlSelf->top__DOT__datapath__DOT__PCenable = (1U 
                                                  & (~ 
                                                     (((((0U 
@@ -1868,10 +1864,11 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__datapath__DOT__datamem = VL_RAND_RESET_I(12);
     vlSelf->top__DOT__datapath__DOT__ForwardingA = VL_RAND_RESET_I(2);
     vlSelf->top__DOT__datapath__DOT__ForwardingB = VL_RAND_RESET_I(2);
-    vlSelf->top__DOT__datapath__DOT__stall_flag = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__datapath__DOT__PCenable = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__datapath__DOT__IfIdEN = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__datapath__DOT__flush = VL_RAND_RESET_I(1);
+    vlSelf->top__DOT__datapath__DOT__mem_stall_flag = VL_RAND_RESET_I(1);
+    vlSelf->top__DOT__datapath__DOT__dummy_flag = VL_RAND_RESET_I(1);
     vlSelf->top__DOT__datapath__DOT__IfId = VL_RAND_RESET_Q(44);
     for (int __Vi0=0; __Vi0<32; ++__Vi0) {
         vlSelf->top__DOT__datapath__DOT__RF[__Vi0] = VL_RAND_RESET_I(32);
