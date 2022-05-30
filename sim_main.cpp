@@ -80,7 +80,7 @@ int main(int argc, char** argv, char** env){
   tb->reset();
   clock_count++;
   // Hit that reset button for one clock cycle:
-  for(int x=0; x <1000; x++){
+  for(int x=0; x <3000; x++){
     tb->tick();
     clock_count++;
   }
