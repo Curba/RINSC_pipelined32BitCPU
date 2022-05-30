@@ -105,7 +105,7 @@ VL_ATTR_COLD void Vtop___024root__trace_init_sub__TOP__0(Vtop___024root* vlSelf,
     tracep->declBus(c+40,"branchId", false,-1, 1,0);
     tracep->declBus(c+41,"branchex", false,-1, 1,0);
     tracep->declBit(c+421,"mem_stall_flag", false,-1);
-    tracep->declBit(c+42,"dummy_flag", false,-1);
+    tracep->declBit(c+42,"normal_stall", false,-1);
     tracep->declQuad(c+43,"IfId", false,-1, 43,0);
     tracep->declBus(c+45,"JumpAddress", false,-1, 18,0);
     for (int i = 0; i < 32; ++i) {
@@ -561,7 +561,7 @@ VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, Veril
                                       >> 0x10U))),2);
     tracep->fullCData(oldp+41,((3U & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
                                       >> 0xfU))),2);
-    tracep->fullBit(oldp+42,(vlSelf->top__DOT__datapath__DOT__dummy_flag));
+    tracep->fullBit(oldp+42,(vlSelf->top__DOT__datapath__DOT__normal_stall));
     tracep->fullQData(oldp+43,(vlSelf->top__DOT__datapath__DOT__IfId),44);
     tracep->fullIData(oldp+45,((0x7ffffU & (IData)(
                                                    (vlSelf->top__DOT__datapath__DOT__IfId 

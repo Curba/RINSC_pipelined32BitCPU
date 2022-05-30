@@ -41,7 +41,7 @@ VL_MODULE(Vtop___024root) {
         CData/*0:0*/ top__DOT__datapath__DOT__IfIdEN;
         CData/*0:0*/ top__DOT__datapath__DOT__flush;
         CData/*0:0*/ top__DOT__datapath__DOT__mem_stall_flag;
-        CData/*0:0*/ top__DOT__datapath__DOT__dummy_flag;
+        CData/*0:0*/ top__DOT__datapath__DOT__normal_stall;
         CData/*0:0*/ top__DOT__datapath__DOT__zero_flag;
         CData/*0:0*/ top__DOT__datapath__DOT__branch_src;
         CData/*0:0*/ top__DOT__memory__DOT__mem_ready_icache;

@@ -109,7 +109,7 @@ void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedVcd* trace
                                          >> 0x10U))),2);
         tracep->chgCData(oldp+40,((3U & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
                                          >> 0xfU))),2);
-        tracep->chgBit(oldp+41,(vlSelf->top__DOT__datapath__DOT__dummy_flag));
+        tracep->chgBit(oldp+41,(vlSelf->top__DOT__datapath__DOT__normal_stall));
         tracep->chgQData(oldp+42,(vlSelf->top__DOT__datapath__DOT__IfId),44);
         tracep->chgIData(oldp+44,((0x7ffffU & (IData)(
                                                       (vlSelf->top__DOT__datapath__DOT__IfId 
