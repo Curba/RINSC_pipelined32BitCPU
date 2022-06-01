@@ -479,13 +479,13 @@ module datapath(input logic clk, reset,
 	// Data Memory Write Logic
     assign dcache_byte_en = ExMem.MemWrite;
 
-	always @(posedge clk) begin
-		dcache_writeData   = datamem_write_data;
-		end
+//	always @(posedge clk) begin
+	assign dcache_writeData = datamem_write_data;
+//		end
 
 
 	// Data Memory Read Logic
-    assign dcache_dataRequest = (ExMem.MemRead != 0) ? 1:0;
+    assign dcache_dataRequest = (ExMem.MemWrite != 0 || ExMem.MemRead !=0) ? 1:0;
     assign dcache_address = datamem_address;
     assign datamem_data = dcache_readData;
     assign dcache_rw = (ExMem.MemWrite != 0) ? 1:0;

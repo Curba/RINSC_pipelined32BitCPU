@@ -34,6 +34,7 @@ VL_MODULE(Vtop___024root) {
         CData/*1:0*/ top__DOT__branch_flag;
         CData/*0:0*/ top__DOT__jump_flag;
         CData/*0:0*/ top__DOT__double_jump_flag;
+        CData/*0:0*/ top__DOT__dcache_dataRequest;
         CData/*0:0*/ top__DOT__transfer_in_progress;
         CData/*1:0*/ top__DOT__datapath__DOT__ForwardingA;
         CData/*1:0*/ top__DOT__datapath__DOT__ForwardingB;
@@ -77,9 +78,9 @@ VL_MODULE(Vtop___024root) {
         CData/*1:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count;
         CData/*0:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we;
         CData/*0:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__re;
-        CData/*2:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
     };
     struct {
+        CData/*2:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
         CData/*1:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count;
         CData/*2:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count;
         CData/*2:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
@@ -105,7 +106,7 @@ VL_MODULE(Vtop___024root) {
         SData/*11:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem_with_word_offset;
         SData/*11:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem;
         SData/*11:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset;
-        IData/*31:0*/ top__DOT__dcache_writeData;
+        IData/*31:0*/ top__DOT__datapath__DOT__datamem_write_data;
         IData/*31:0*/ top__DOT__datapath__DOT__RF_WriteData;
         IData/*31:0*/ top__DOT__datapath__DOT__alu1in_a;
         IData/*31:0*/ top__DOT__datapath__DOT__alu1in_b;
@@ -143,9 +144,9 @@ VL_MODULE(Vtop___024root) {
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
         QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line;
-        QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line;
     };
     struct {
+        QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line;
         VlUnpacked<IData/*31:0*/, 32> top__DOT__datapath__DOT__RF;
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in;
         VlUnpacked<IData/*31:0*/, 8> top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out;
