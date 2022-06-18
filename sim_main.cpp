@@ -93,7 +93,7 @@ int main(int argc, char** argv, char** env){
   tb->reset();
   clock_count++;
   // Hit that reset button for one clock cycle:
-  for(int x=0; x <1001; x++){
+  for(int x=0; x <10000; x++){
     rw_count = ((tb->m_topsim->rootp->Op == 49) //HEX31
             || (tb->m_topsim->rootp->Op == 25)) ? rw_count+1:rw_count;// HEX 19
 

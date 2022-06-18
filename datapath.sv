@@ -474,7 +474,7 @@ module datapath(input logic clk, reset,
 
 	// Data	Memory Address
 	assign datamem_address = ExMem.Alu1out[11:0];
-    assign datamem_write_data = (ForwardingD) ? MemWb.Alu2out:ExMem.db;
+    assign datamem_write_data = (ForwardingD) ? MemWb.datamem_data:ExMem.db;
 
 	// Data Memory Write Logic
     assign dcache_byte_en = ExMem.MemWrite;
@@ -484,47 +484,41 @@ module datapath(input logic clk, reset,
 //		end
 
 
+
 	// Data Memory Read Logic
     assign dcache_dataRequest = (ExMem.MemWrite != 0 || ExMem.MemRead !=0) ? 1:0;
     assign dcache_address = datamem_address;
-    assign datamem_data = dcache_readData;
+//   assign datamem_data = dcache_readData;
     assign dcache_rw = (ExMem.MemWrite != 0) ? 1:0;
 
-    /*
-    always_comb begin
-        if(dcache_data_ready)begin
-            datamem_data[7:0]  =   (ExMem.MemRead[0])? dcache_readData[7:0]:8'bx;
-            if(ExMem.MemRead[1] == 0 && ExMem.MemSignExtend)
-                datamem_data[15:8] = {(8){datamem_data[7]}};
+    always_comb begin 
+    assign datamem_data[7:0]  =   (ExMem.MemRead[0])? dcache_readData[7:0]:8'bx;
+             if(ExMem.MemRead[1] == 0 && ExMem.MemSignExtend)
+               assign datamem_data[15:8] = {(8){datamem_data[7]}};
              else if (ExMem.MemRead[1])
-                datamem_data[15:8] = dcache_readData[15:8];
+               assign datamem_data[15:8] = dcache_readData[15:8];
              else
-                datamem_data[15:8] = 8'b0;
+               assign datamem_data[15:8] = 8'b0;
 
              if(ExMem.MemRead[2] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
-                 datamem_data[23:16] = {(8){datamem_data[7]}};
+                assign datamem_data[23:16] = {(8){datamem_data[7]}};
              else if (ExMem.MemRead[2] == 0 && ExMem.MemSignExtend)
-                 datamem_data[23:16] = {(8){datamem_data[15]}};
+                assign datamem_data[23:16] = {(8){datamem_data[15]}};
              else if(ExMem.MemRead[2])
-                datamem_data[23:16] = dcache_readData[23:16];
+                assign datamem_data[23:16] = dcache_readData[23:16];
              else
-                 datamem_data[23:16] = 8'b0;
+                assign datamem_data[23:16] = 8'b0;
 
              if(ExMem.MemRead[3] == 0 && ExMem.MemSignExtend && ExMem.MemRead[1] == 0)
-                 datamem_data[31:24] = {(8){datamem_data[7]}};
+                assign datamem_data[31:24] = {(8){datamem_data[7]}};
              else if (ExMem.MemRead[3] == 0 && ExMem.MemSignExtend)
-                 datamem_data[31:24] = {(8){datamem_data[15]}};
+                assign datamem_data[31:24] = {(8){datamem_data[15]}};
              else if(ExMem.MemRead[3])
-                 datamem_data[31:24] = dcache_readData[31:24];
+                assign datamem_data[31:24] = dcache_readData[31:24];
              else
-                 datamem_data[31:24] = 8'b0;
-            end
-        else begin
-            datamem_data[31:0] = 32'bx;
-            end
+                assign datamem_data[31:24] = 8'b0;
 
-     end
-     */
+    end
 
 	//PC logic
 	always@ (posedge clk)begin

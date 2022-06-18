@@ -14,11 +14,11 @@
 // Definition of DRAM Block Size in terms of
 // # of Data Words. Block size is assumed same
 // for the full memory hierarchy.
-`define DRAM_BLOCK_SIZE           16
+`define DRAM_BLOCK_SIZE           8
 
 // Definition of DRAM latencies in clock cycles
-`define DRAM_READ_ACCESS_TIME    4
-`define DRAM_WRITE_ACCESS_TIME   6
+`define DRAM_READ_ACCESS_TIME    8
+`define DRAM_WRITE_ACCESS_TIME   12
 `define DRAM_CYCLE_TIME           4
 
 // Definition of DRAM file

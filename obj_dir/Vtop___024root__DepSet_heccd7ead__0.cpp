@@ -49,22 +49,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v6;
     CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7;
     IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v8;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v8;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v9;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v9;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v10;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v10;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v11;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v11;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v12;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v12;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v13;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v13;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v14;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v14;
-    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v15;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v15;
     CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0;
     CData/*2:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0;
     CData/*0:0*/ __Vdlyvset__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0;
@@ -91,28 +75,12 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v6;
     CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7;
     IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v8;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v8;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v9;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v9;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v10;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v10;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v11;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v11;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v12;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v12;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v13;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v13;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v14;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v14;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v15;
-    IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v15;
     CData/*1:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem__v0;
+    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem__v0;
     IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem__v0;
     CData/*0:0*/ __Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem__v0;
-    QData/*62:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
-    VlWide<3>/*64:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
+    QData/*34:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
+    QData/*38:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
     SData/*11:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v0;
     CData/*7:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v0;
     CData/*0:0*/ __Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v0;
@@ -123,10 +91,10 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     SData/*11:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v3;
     CData/*7:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v3;
     CData/*1:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem__v0;
+    CData/*2:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem__v0;
     IData/*31:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem__v0;
     CData/*0:0*/ __Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem__v0;
-    QData/*62:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line;
+    QData/*34:0*/ __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line;
     SData/*11:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0;
     CData/*7:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0;
     CData/*0:0*/ __Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0;
@@ -136,7 +104,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     CData/*7:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v2;
     SData/*11:0*/ __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v3;
     CData/*7:0*/ __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v3;
-    VlWide<3>/*95:0*/ __Vtemp_h64662659__0;
     // Body
     __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
@@ -150,12 +117,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count;
     vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
-    __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U];
-    __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U];
-    __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U];
+    __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
     __Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0 = 0U;
     __Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v0 = 0U;
     __Vdlyvset__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0 = 0U;
@@ -172,88 +135,84 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         = vlSelf->reset;
     __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
         = ((1U & ((IData)(vlSelf->reset) | (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__re))))
-            ? 0ULL : ((0x7ffffffffffffffeULL & (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
-                                                << 1U)) 
-                      | (QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__re))));
+            ? 0ULL : ((0x7fffffffeULL & (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
+                                         << 1U)) | (QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__re))));
     __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count 
         = ((1U & ((IData)(vlSelf->reset) | ((~ (IData)(
                                                        (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
-                                                        >> 1U))) 
-                                            & (~ vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))))
+                                                        >> 5U))) 
+                                            & (~ (IData)(
+                                                         (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                          >> 6U))))))
             ? 0U : (3U & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count))));
     __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count 
         = ((1U & ((IData)(vlSelf->reset) | ((~ (IData)(
                                                        (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
-                                                        >> 1U))) 
-                                            & (~ vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))))
+                                                        >> 5U))) 
+                                            & (~ (IData)(
+                                                         (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                          >> 6U))))))
             ? 0U : (3U & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count))));
     __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
         = ((1U & ((IData)(vlSelf->reset) | (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__re))))
-            ? 0ULL : ((0x7ffffffffffffffeULL & (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
-                                                << 1U)) 
-                      | (QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__re))));
-    if (vlSelf->reset) {
-        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem = 0U;
-    } else if ((((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_read_enable) 
-                 & (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we))) 
-                | (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_write_enable))) {
-        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_address;
-    }
-    if ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])) {
+            ? 0ULL : ((0x7fffffffeULL & (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
+                                         << 1U)) | (QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__re))));
+    if ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                       >> 6U)))) {
         vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_to_mem 
             = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_icache__bus_data_to_mem
             [vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count];
     }
-    if ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])) {
+    if ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                       >> 6U)))) {
         vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_to_mem 
             = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem
             [vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count];
     }
+    if (vlSelf->reset) {
+        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem = 0U;
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__cstate = 1U;
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__cstate = 1U;
+    } else {
+        if ((((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_read_enable) 
+              & (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we))) 
+             | (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_write_enable))) {
+            vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem 
+                = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_address;
+        }
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__cstate 
+            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__nstate;
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__cstate 
+            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__nstate;
+    }
     if ((1U & ((IData)(vlSelf->reset) | ((~ (IData)(
                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
-                                                     >> 1U))) 
-                                         & (~ vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))))) {
+                                                     >> 5U))) 
+                                         & (~ (IData)(
+                                                      (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                       >> 6U))))))) {
         vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count = 0U;
     } else if ((0U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count))) {
         vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count 
-            = (0xfU & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count)));
+            = (7U & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count)));
     }
     if ((1U & ((IData)(vlSelf->reset) | ((~ (IData)(
                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
-                                                     >> 1U))) 
-                                         & (~ vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))))) {
+                                                     >> 5U))) 
+                                         & (~ (IData)(
+                                                      (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                       >> 6U))))))) {
         vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count = 0U;
     } else if ((0U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count))) {
         vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count 
-            = (0xfU & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count)));
+            = (7U & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count)));
     }
-    if ((1U & ((IData)(vlSelf->reset) | (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__we))))) {
-        __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U] = 0U;
-        __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U] = 0U;
-        __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U] = 0U;
-    } else {
-        __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U] 
-            = (((IData)((((QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                          << 0x20U) | (QData)((IData)(
-                                                      vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])))) 
-                << 1U) | (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__we));
-        __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U] 
-            = (((IData)((((QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                          << 0x20U) | (QData)((IData)(
-                                                      vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])))) 
-                >> 0x1fU) | ((IData)(((((QData)((IData)(
-                                                        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                                        << 0x20U) | (QData)((IData)(
-                                                                    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))) 
-                                      >> 0x20U)) << 1U));
-        __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U] 
-            = ((IData)(((((QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                          << 0x20U) | (QData)((IData)(
-                                                      vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))) 
-                        >> 0x20U)) >> 0x1fU);
-    }
-    if ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])) {
+    __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+        = ((1U & ((IData)(vlSelf->reset) | (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__we))))
+            ? 0ULL : ((0x7ffffffffeULL & (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                          << 1U)) | (QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__we))));
+    if ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                       >> 6U)))) {
         __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0 
             = (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_pin 
                >> 0x18U);
@@ -275,7 +234,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v3 
             = (0xfffU & ((IData)(3U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset)));
     }
-    if ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])) {
+    if ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                       >> 6U)))) {
         __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v0 
             = (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_pin 
                >> 0x18U);
@@ -297,55 +257,16 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         __Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v3 
             = (0xfffU & ((IData)(3U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem_with_word_offset)));
     }
-    if ((1U & ((IData)(vlSelf->reset) | (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we))))) {
-        __Vtemp_h64662659__0[1U] = 0U;
-        __Vtemp_h64662659__0[2U] = 0U;
-        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U] = 0U;
-    } else {
-        __Vtemp_h64662659__0[1U] = (((IData)((((QData)((IData)(
-                                                               vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                                               << 0x20U) 
-                                              | (QData)((IData)(
-                                                                vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])))) 
-                                     >> 0x1fU) | ((IData)(
-                                                          ((((QData)((IData)(
-                                                                             vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                                                             << 0x20U) 
-                                                            | (QData)((IData)(
-                                                                              vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))) 
-                                                           >> 0x20U)) 
-                                                  << 1U));
-        __Vtemp_h64662659__0[2U] = ((IData)(((((QData)((IData)(
-                                                               vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                                               << 0x20U) 
-                                              | (QData)((IData)(
-                                                                vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U]))) 
-                                             >> 0x20U)) 
-                                    >> 0x1fU);
-        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U] 
-            = (((IData)((((QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[1U])) 
-                          << 0x20U) | (QData)((IData)(
-                                                      vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])))) 
-                << 1U) | (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we));
-    }
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[1U] 
-        = __Vtemp_h64662659__0[1U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[2U] 
-        = __Vtemp_h64662659__0[2U];
+    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+        = ((1U & ((IData)(vlSelf->reset) | (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we))))
+            ? 0ULL : ((0x7ffffffffeULL & (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                          << 1U)) | (QData)((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__we))));
     if (vlSelf->reset) {
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__cstate = 1U;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__cstate = 1U;
         vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem = 0U;
-    } else {
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__cstate 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__nstate;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__cstate 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__nstate;
-        if (((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_port1_busy) 
-             & (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__we)))) {
-            vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem 
-                = vlSelf->top__DOT__datapath__DOT__PC;
-        }
+    } else if (((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_port1_busy) 
+                & (~ (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__we)))) {
+        vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem 
+            = vlSelf->top__DOT__datapath__DOT__PC;
     }
     if (vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_tag_we) {
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0 
@@ -353,115 +274,67 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         __Vdlyvset__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_tag__v0 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_tag_write;
         __Vdlyvset__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_tag__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_tag__v0 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
     }
     if (vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_we) {
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0xfU];
+            [7U];
         __Vdlyvset__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v1 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0xeU];
+            [6U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v1 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v2 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0xdU];
+            [5U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v2 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v3 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0xcU];
+            [4U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v3 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v4 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0xbU];
+            [3U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v4 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v5 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0xaU];
+            [2U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v5 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v6 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [9U];
+            [1U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v6 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
         __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7 
             = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [8U];
+            [0U];
         __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7 
             = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v8 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [7U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v8 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v9 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [6U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v9 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v10 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [5U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v10 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v11 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [4U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v11 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v12 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [3U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v12 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v13 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [2U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v13 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v14 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [1U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v14 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
-        __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v15 
-            = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write
-            [0U];
-        __Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v15 
-            = (7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                     >> 6U));
+                     >> 5U));
     }
     if (((IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
-                  >> 1U)) & ((2U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count)) 
+                  >> 5U)) & ((2U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count)) 
                              | (0U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count))))) {
         __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem__v0 
             = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_pin;
@@ -470,7 +343,7 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
             = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count;
     }
     if (((IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
-                  >> 1U)) & ((2U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count)) 
+                  >> 5U)) & ((2U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__cycle_count)) 
                              | (0U == (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count))))) {
         __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem__v0 
             = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_pin;
@@ -484,19 +357,48 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         __Vdlyvset__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_dirty__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_dirty__v0 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_valid__v0 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_valid_write;
         __Vdlyvset__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_valid__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_valid__v0 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_tag_write;
         __Vdlyvset__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
+    }
+    if ((1U & ((~ (IData)(vlSelf->top__DOT__datapath__DOT__mem_stall_flag)) 
+               | ((IData)(vlSelf->top__DOT__datapath__DOT__mem_stall_flag) 
+                  & (IData)(vlSelf->top__DOT__datapath__DOT__normal_stall))))) {
+        vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
+            = ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[2U]) 
+               | (0xfffe0U & ((0xfff00U & (vlSelf->top__DOT__datapath__DOT__ExMem[4U] 
+                                           >> 1U)) 
+                              | ((0x80U & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                           >> 0x18U)) 
+                                 | (0x60U & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                             >> 0x17U))))));
+        vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+            = (((IData)((((QData)((IData)(vlSelf->top__DOT__datapath__DOT__datamem_data)) 
+                          << 0x20U) | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out)))) 
+                << 5U) | (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                   >> 0x17U)));
+        vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+            = (((IData)((((QData)((IData)(vlSelf->top__DOT__datapath__DOT__datamem_data)) 
+                          << 0x20U) | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out)))) 
+                >> 0x1bU) | ((IData)(((((QData)((IData)(vlSelf->top__DOT__datapath__DOT__datamem_data)) 
+                                        << 0x20U) | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out))) 
+                                      >> 0x20U)) << 5U));
+        vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
+            = ((0xfffe0U & vlSelf->top__DOT__datapath__DOT__MemWb[2U]) 
+               | (0xfffffU & ((IData)(((((QData)((IData)(vlSelf->top__DOT__datapath__DOT__datamem_data)) 
+                                         << 0x20U) 
+                                        | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out))) 
+                                       >> 0x20U)) >> 0x1bU)));
     }
     if (vlSelf->reset) {
         __Vdly__top__DOT__datapath__DOT__PC = 0U;
@@ -530,157 +432,56 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
                                                     ((IData)(4U) 
                                                      + (IData)(vlSelf->top__DOT__datapath__DOT__PC))))));
     }
-    if ((1U & ((~ (IData)(vlSelf->top__DOT__datapath__DOT__mem_stall_flag)) 
-               | ((IData)(vlSelf->top__DOT__datapath__DOT__mem_stall_flag) 
-                  & (IData)(vlSelf->top__DOT__datapath__DOT__normal_stall))))) {
-        vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-            = ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[2U]) 
-               | (0xfffe0U & ((0xfff00U & (vlSelf->top__DOT__datapath__DOT__ExMem[4U] 
-                                           >> 1U)) 
-                              | ((0x80U & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                           >> 0x18U)) 
-                                 | (0x60U & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                             >> 0x17U))))));
-        vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
-            = (((IData)((((QData)((IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                          [(0xfU & 
-                                            ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                              << 2U) 
-                                             | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                >> 0x1eU)))])) 
-                          << 0x20U) | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out)))) 
-                << 5U) | (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                   >> 0x17U)));
-        vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-            = (((IData)((((QData)((IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                          [(0xfU & 
-                                            ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                              << 2U) 
-                                             | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                >> 0x1eU)))])) 
-                          << 0x20U) | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out)))) 
-                >> 0x1bU) | ((IData)(((((QData)((IData)(
-                                                        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                                        [
-                                                        (0xfU 
-                                                         & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                             << 2U) 
-                                                            | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                               >> 0x1eU)))])) 
-                                        << 0x20U) | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out))) 
-                                      >> 0x20U)) << 5U));
-        vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-            = ((0xfffe0U & vlSelf->top__DOT__datapath__DOT__MemWb[2U]) 
-               | (0xfffffU & ((IData)(((((QData)((IData)(
-                                                         vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                                         [
-                                                         (0xfU 
-                                                          & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                              << 2U) 
-                                                             | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                                >> 0x1eU)))])) 
-                                         << 0x20U) 
-                                        | (QData)((IData)(vlSelf->top__DOT__datapath__DOT__Alu2out))) 
-                                       >> 0x20U)) >> 0x1bU)));
-    }
     if (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_we) {
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0xfU];
+            [7U];
         __Vdlyvset__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0 = 1U;
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v1 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0xeU];
+            [6U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v1 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v2 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0xdU];
+            [5U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v2 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v3 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0xcU];
+            [4U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v3 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v4 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0xbU];
+            [3U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v4 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v5 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0xaU];
+            [2U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v5 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v6 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [9U];
+            [1U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v6 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
         __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7 
             = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [8U];
+            [0U];
         __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7 
             = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v8 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [7U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v8 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v9 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [6U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v9 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v10 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [5U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v10 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v11 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [4U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v11 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v12 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [3U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v12 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v13 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [2U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v13 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v14 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [1U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v14 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
-        __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v15 
-            = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write
-            [0U];
-        __Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v15 
-            = (0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                       >> 2U));
+                       >> 1U));
     }
     if (__Vdlyvset__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0) {
         vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem[__Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem__v0] 
@@ -702,12 +503,8 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem[__Vdlyvdim0__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v3] 
             = __Vdlyvval__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem__v3;
     }
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U] 
-        = __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U] 
-        = __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[1U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U] 
-        = __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U];
+    vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+        = __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
     if (__Vdlyvset__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0) {
         vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid__v0;
@@ -717,38 +514,22 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_tag__v0;
     }
     if (__Vdlyvset__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0) {
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0][0xfU] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0][7U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v0;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v1][0xeU] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v1][6U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v1;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v2][0xdU] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v2][5U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v2;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v3][0xcU] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v3][4U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v3;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v4][0xbU] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v4][3U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v4;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v5][0xaU] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v5][2U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v5;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v6][9U] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v6][1U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v6;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7][8U] 
+        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7][0U] 
             = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v7;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v8][7U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v8;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v9][6U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v9;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v10][5U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v10;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v11][4U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v11;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v12][3U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v12;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v13][2U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v13;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v14][1U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v14;
-        vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram[__Vdlyvdim0__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v15][0U] 
-            = __Vdlyvval__top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram__v15;
     }
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count 
         = __Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__cycle_count;
@@ -779,71 +560,79 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag__v0;
     }
     if (__Vdlyvset__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0) {
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0][0xfU] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0][7U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v0;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v1][0xeU] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v1][6U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v1;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v2][0xdU] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v2][5U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v2;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v3][0xcU] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v3][4U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v3;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v4][0xbU] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v4][3U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v4;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v5][0xaU] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v5][2U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v5;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v6][9U] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v6][1U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v6;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7][8U] 
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7][0U] 
             = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v7;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v8][7U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v8;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v9][6U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v9;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v10][5U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v10;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v11][4U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v11;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v12][3U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v12;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v13][2U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v13;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v14][1U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v14;
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram[__Vdlyvdim0__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v15][0U] 
-            = __Vdlyvval__top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram__v15;
     }
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__en0 
-        = (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-             ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                 ? 0U : 0xffU) : 0xffU) << 0x18U);
+        = (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                           >> 6U))) ? ((1U & (IData)(
+                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                      >> 6U)))
+                                        ? 0U : 0xffU)
+             : 0xffU) << 0x18U);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__en1 
-        = (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-             ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                 ? 0U : 0xffU) : 0xffU) << 0x10U);
+        = (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                           >> 6U))) ? ((1U & (IData)(
+                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                      >> 6U)))
+                                        ? 0U : 0xffU)
+             : 0xffU) << 0x10U);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__en2 
-        = (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-             ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                 ? 0U : 0xffU) : 0xffU) << 8U);
+        = (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                           >> 6U))) ? ((1U & (IData)(
+                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                      >> 6U)))
+                                        ? 0U : 0xffU)
+             : 0xffU) << 8U);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__en3 
-        = ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-            ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : 0xffU) : 0xffU);
+        = ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                          >> 6U))) ? ((1U & (IData)(
+                                                    (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                     >> 6U)))
+                                       ? 0U : 0xffU)
+            : 0xffU);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en0 
-        = (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-             ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                 ? 0U : 0xffU) : 0xffU) << 0x18U);
+        = (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                           >> 6U))) ? ((1U & (IData)(
+                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                      >> 6U)))
+                                        ? 0U : 0xffU)
+             : 0xffU) << 0x18U);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en1 
-        = (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-             ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                 ? 0U : 0xffU) : 0xffU) << 0x10U);
+        = (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                           >> 6U))) ? ((1U & (IData)(
+                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                      >> 6U)))
+                                        ? 0U : 0xffU)
+             : 0xffU) << 0x10U);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en2 
-        = (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-             ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                 ? 0U : 0xffU) : 0xffU) << 8U);
+        = (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                           >> 6U))) ? ((1U & (IData)(
+                                                     (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                      >> 6U)))
+                                        ? 0U : 0xffU)
+             : 0xffU) << 8U);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en3 
-        = ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-            ? ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : 0xffU) : 0xffU);
+        = ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                          >> 6U))) ? ((1U & (IData)(
+                                                    (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                                     >> 6U)))
+                                       ? 0U : 0xffU)
+            : 0xffU);
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
         [0U];
@@ -868,30 +657,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[7U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
         [7U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[8U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [8U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[9U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_from_mem
-        [0xfU];
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
         [0U];
@@ -916,30 +681,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[7U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
         [7U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[8U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [8U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[9U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_from_mem
-        [0xfU];
     vlSelf->top__DOT__datapath__DOT__RF_WriteData = 
         ((0U == (3U & (vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
                        >> 5U))) ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
@@ -1080,30 +821,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
              | vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en1) 
             | vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en2) 
            | vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en3);
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[9U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [9U];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[8U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
-        [8U];
     vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[7U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
         [7U];
@@ -1128,30 +845,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data[0U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_icache__bus_data_from_mem
         [0U];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[9U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [9U];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[8U] 
-        = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
-        [8U];
     vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[7U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
         [7U];
@@ -1176,30 +869,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data[0U] 
         = vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellout__dram_interface_dcache__bus_data_from_mem
         [0U];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0xfU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0xeU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0xdU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0xcU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0xbU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0xaU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[9U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [9U];
-    vlSelf->top__DOT__memory__DOT__icache_instructionBlock[8U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
-        [8U];
     vlSelf->top__DOT__memory__DOT__icache_instructionBlock[7U] 
         = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
         [7U];
@@ -1224,30 +893,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__icache_instructionBlock[0U] 
         = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port1_read_data
         [0U];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[0xfU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[0xeU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[0xdU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[0xcU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[0xbU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[0xaU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[9U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dcache_readBlock[8U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
-        [8U];
     vlSelf->top__DOT__memory__DOT__dcache_readBlock[7U] 
         = vlSelf->top__DOT__memory__DOT____Vcellout__dram_controller__dram_port2_read_data
         [7U];
@@ -1478,15 +1123,15 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_dirty_read 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_dirty
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))];
+                  >> 1U))];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_tag_read 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_tag
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))];
+                  >> 1U))];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_valid_read 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_tag__DOT__dcache_valid
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))];
+                  >> 1U))];
     vlSelf->top__DOT__dcache_dataRequest = ((IData)(
                                                     (0U 
                                                      != 
@@ -1497,101 +1142,45 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         = (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
             & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
                == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                            >> 0x17U)))) ? ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                            >> 0x17U)))) ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
                                              << 0x1bU) 
-                                            | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                            | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
                                                >> 5U))
             : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
                 << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
                           >> 0x1cU)));
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][9U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
-        [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][8U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][7U];
+                  >> 1U))][7U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[6U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][6U];
+                  >> 1U))][6U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[5U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][5U];
+                  >> 1U))][5U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[4U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][4U];
+                  >> 1U))][4U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[3U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][3U];
+                  >> 1U))][3U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[2U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][2U];
+                  >> 1U))][2U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[1U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][1U];
+                  >> 1U))][1U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read[0U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__data_cache_sram__DOT__dcache_sram
         [(0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                  >> 2U))][0U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[9U] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [9U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[8U] 
-        = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
-        [8U];
+                  >> 1U))][0U];
     vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[7U] 
         = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
         [7U];
@@ -1616,30 +1205,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in[0U] 
         = vlSelf->top__DOT__memory__DOT__icache_instructionBlock
         [0U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [9U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_readBlock
-        [8U];
     vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_readBlock
         [7U];
@@ -1738,30 +1303,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     } else {
         vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_data_to_cpu_ready = 0U;
     }
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
-        [8U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellout__data_cache_sram__data_read
         [7U];
@@ -1957,7 +1498,7 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
                                                                     : 
                                                                    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read
                                                                    [
-                                                                   (0xfU 
+                                                                   (7U 
                                                                     & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
                                                                        >> 2U))]))) 
                                                   << 0xcU) 
@@ -1966,35 +1507,97 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
                                                                     & ((IData)(4U) 
                                                                        + (IData)(vlSelf->top__DOT__datapath__DOT__PC))))));
     }
+    vlSelf->top__DOT__datapath__DOT__datamem_data = 
+        ((0xffffff00U & vlSelf->top__DOT__datapath__DOT__datamem_data) 
+         | ((0x20U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+             ? (0xffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                         << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                   >> 0x1eU)))]) : 0U));
+    vlSelf->top__DOT__datapath__DOT__datamem_data = 
+        ((0xffff00ffU & vlSelf->top__DOT__datapath__DOT__datamem_data) 
+         | (0xff00U & (((IData)((1U == (0x41U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])))
+                         ? (- (IData)((1U & (vlSelf->top__DOT__datapath__DOT__datamem_data 
+                                             >> 7U))))
+                         : ((0x40U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                             ? (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                         << 2U) | (
+                                                   vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                   >> 0x1eU)))] 
+                                >> 8U) : 0U)) << 8U)));
+    vlSelf->top__DOT__datapath__DOT__datamem_data = 
+        ((0xff00ffffU & vlSelf->top__DOT__datapath__DOT__datamem_data) 
+         | (0xff0000U & (((IData)((1U == (0xc1U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])))
+                           ? (- (IData)((1U & (vlSelf->top__DOT__datapath__DOT__datamem_data 
+                                               >> 7U))))
+                           : ((IData)((1U == (0x81U 
+                                              & vlSelf->top__DOT__datapath__DOT__ExMem[4U])))
+                               ? (- (IData)((1U & (vlSelf->top__DOT__datapath__DOT__datamem_data 
+                                                   >> 0xfU))))
+                               : ((0x80U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                   ? (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                      [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                               << 2U) 
+                                              | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                 >> 0x1eU)))] 
+                                      >> 0x10U) : 0U))) 
+                         << 0x10U)));
+    vlSelf->top__DOT__datapath__DOT__datamem_data = 
+        ((0xffffffU & vlSelf->top__DOT__datapath__DOT__datamem_data) 
+         | (((IData)((1U == (0x141U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])))
+              ? (- (IData)((1U & (vlSelf->top__DOT__datapath__DOT__datamem_data 
+                                  >> 7U)))) : ((IData)(
+                                                       (1U 
+                                                        == 
+                                                        (0x101U 
+                                                         & vlSelf->top__DOT__datapath__DOT__ExMem[4U])))
+                                                ? (- (IData)(
+                                                             (1U 
+                                                              & (vlSelf->top__DOT__datapath__DOT__datamem_data 
+                                                                 >> 0xfU))))
+                                                : (
+                                                   (0x100U 
+                                                    & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                                    ? 
+                                                   (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                                    [
+                                                    (7U 
+                                                     & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                         << 2U) 
+                                                        | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                           >> 0x1eU)))] 
+                                                    >> 0x18U)
+                                                    : 0U))) 
+            << 0x18U));
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
         = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
            | (0xffU & ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
                         ? vlSelf->top__DOT__datapath__DOT__datamem_write_data
                         : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                       [(0xfU & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                  << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                            >> 0x1eU)))])));
+                       [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                          >> 0x1eU)))])));
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
         = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
            | (0xff00U & (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
                            ? (vlSelf->top__DOT__datapath__DOT__datamem_write_data 
                               >> 8U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                        [(0xfU & ((
-                                                   vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                   << 2U) 
-                                                  | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                     >> 0x1eU)))] 
+                                        [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                 << 2U) 
+                                                | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                   >> 0x1eU)))] 
                                         >> 8U)) << 8U)));
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
         = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
            | (0xff0000U & (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
                              ? (vlSelf->top__DOT__datapath__DOT__datamem_write_data 
                                 >> 0x10U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                             [(0xfU 
-                                               & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                   << 2U) 
-                                                  | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                     >> 0x1eU)))] 
+                                             [(7U & 
+                                               ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                 << 2U) 
+                                                | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                   >> 0x1eU)))] 
                                              >> 0x10U)) 
                            << 0x10U)));
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
@@ -2002,35 +1605,11 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
            | (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
                 ? (vlSelf->top__DOT__datapath__DOT__datamem_write_data 
                    >> 0x18U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                [(0xfU & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                           << 2U) | 
-                                          (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                           >> 0x1eU)))] 
+                                [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                         << 2U) | (
+                                                   vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                   >> 0x1eU)))] 
                                 >> 0x18U)) << 0x18U));
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [8U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
         [7U];
@@ -2142,30 +1721,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
                                                    ? 1U
                                                    : 0U);
     vlSelf->top__DOT__datapath__DOT__PC = __Vdly__top__DOT__datapath__DOT__PC;
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [9U];
-    vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
-        [8U];
     vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data
         [7U];
@@ -2195,99 +1750,43 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_tag_read 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_tag
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))];
+                >> 5U))];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_valid_read 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_tag__DOT__icache_valid
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0xfU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0xeU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0xdU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0xcU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0xbU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0xaU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[9U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][9U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[8U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
-        [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][8U];
+                >> 5U))];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[7U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][7U];
+                >> 5U))][7U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[6U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][6U];
+                >> 5U))][6U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[5U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][5U];
+                >> 5U))][5U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[4U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][4U];
+                >> 5U))][4U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[3U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][3U];
+                >> 5U))][3U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[2U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][2U];
+                >> 5U))][2U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[1U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][1U];
+                >> 5U))][1U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read[0U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__inst_cache_sram__DOT__icache_sram
         [(7U & ((IData)(vlSelf->top__DOT__datapath__DOT__PC) 
-                >> 6U))][0U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0xfU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0xeU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0xdU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0xcU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0xbU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0xaU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[9U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[8U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [8U];
+                >> 5U))][0U];
     vlSelf->top__DOT__memory__DOT__dcache_wbBlock[7U] 
         = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
         [7U];
@@ -2366,30 +1865,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
         vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_tag_write = 0U;
         vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_data_to_cpu_ready = 0U;
     }
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[9U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [9U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[8U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
-        [8U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[7U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
         [7U];
@@ -2414,30 +1889,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_read[0U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellout__inst_cache_sram__data_read
         [0U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [9U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [8U];
     vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [7U];
@@ -2491,30 +1942,6 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__1(Vtop___024root* vlSelf) {
                                                   : (IData)(
                                                             (vlSelf->top__DOT__datapath__DOT__IfId 
                                                              >> 0x1dU)))))));
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[0xfU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[0xeU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[0xdU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[0xcU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[0xbU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[0xaU] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[9U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[8U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
-        [8U];
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[7U] 
         = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data
         [7U];
@@ -2711,30 +2138,6 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__0(Vtop___024root* vlSelf) {
     if ((1U != (IData)(vlSelf->top__DOT__memory__DOT__icache_controller__DOT__cstate))) {
         if ((2U == (IData)(vlSelf->top__DOT__memory__DOT__icache_controller__DOT__cstate))) {
             if (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__acknowledge) {
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[0xfU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [0xfU];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[0xeU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [0xeU];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[0xdU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [0xdU];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[0xcU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [0xcU];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[0xbU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [0xbU];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[0xaU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [0xaU];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[9U] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [9U];
-                vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[8U] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
-                    [8U];
                 vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write[7U] 
                     = vlSelf->top__DOT__memory__DOT____Vcellinp__icache_controller__mem_data_in
                     [7U];
@@ -2762,30 +2165,6 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__0(Vtop___024root* vlSelf) {
             }
         }
     }
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-        [8U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
         [7U];
@@ -2810,7 +2189,7 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__0(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
         [0U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[(0xfU 
+    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[(7U 
                                                                               & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
                                                                                 << 2U) 
                                                                                 | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
@@ -2819,30 +2198,6 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__0(Vtop___024root* vlSelf) {
     if ((1U != (IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__cstate))) {
         if ((2U == (IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__cstate))) {
             if (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__acknowledge) {
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xfU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [0xfU];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xeU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [0xeU];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xdU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [0xdU];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xcU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [0xcU];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xbU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [0xbU];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[0xaU] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [0xaU];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[9U] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [9U];
-                vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[8U] 
-                    = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
-                    [8U];
                 vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[7U] 
                     = vlSelf->top__DOT__memory__DOT____Vcellinp__dcache_controller__mem_data_in
                     [7U];
@@ -2909,30 +2264,6 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__0(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_read_enable 
         = ((~ (IData)(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_rw)) 
            & (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_port2_busy));
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[9U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [9U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[8U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [8U];
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[7U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
         [7U];
@@ -2957,30 +2288,6 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__0(Vtop___024root* vlSelf) {
     vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0U] 
         = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
         [0U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0xfU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0xfU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0xeU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0xeU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0xdU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0xdU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0xcU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0xcU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0xbU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0xbU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0xaU] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0xaU];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[9U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [9U];
-    vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[8U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [8U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
         [7U];
@@ -3023,14 +2330,16 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__7(Vtop___024root* vlSelf) {
     }
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__acknowledge 
         = (IData)(((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line 
-                    >> 0x3eU) | vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[2U]));
+                    >> 0x22U) | (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                 >> 0x26U)));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count 
         = vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count;
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count 
         = vlSelf->__Vdly__top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__word_count;
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__acknowledge 
         = (IData)(((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line 
-                    >> 0x3eU) | vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[2U]));
+                    >> 0x22U) | (vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                 >> 0x26U)));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset 
         = (0xfffU & ((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem) 
                      + ((IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__word_count) 
@@ -3041,49 +2350,49 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__7(Vtop___024root* vlSelf) {
                         << 2U)));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out0 
         = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out0) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
                [vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset]) 
               << 0x18U));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out1 
         = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out1) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
                [(0xfffU & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset)))]) 
               << 0x10U));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out2 
         = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out2) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
                [(0xfffU & ((IData)(2U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset)))]) 
               << 8U));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out3 
         = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out3) 
-           | ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-               ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
+           | ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                             >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__mem
               [(0xfffU & ((IData)(3U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__address_to_mem_with_word_offset)))]));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out0 
         = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out0) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
                [vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem_with_word_offset]) 
               << 0x18U));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out1 
         = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out1) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
                [(0xfffU & ((IData)(1U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem_with_word_offset)))]) 
               << 0x10U));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out2 
         = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out2) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
                [(0xfffU & ((IData)(2U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem_with_word_offset)))]) 
               << 8U));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out3 
         = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out3) 
-           | ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-               ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
+           | ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                             >> 6U))) ? 0U : vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__mem
               [(0xfffU & ((IData)(3U) + (IData)(vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__address_to_mem_with_word_offset)))]));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_pin 
         = (((((((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__out0 
@@ -3096,12 +2405,13 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__7(Vtop___024root* vlSelf) {
                  & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__dram_array__DOT__data__out__en3)) 
              & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__data__en0) 
             & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__data__en0) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_to_mem
-                : 0U) & ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                          ? 0xffffffffU : ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                                            ? 0xffffffffU
-                                            : 0U))));
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__data_to_mem
+                : 0U) & ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                        >> 6U))) ? 0xffffffffU
+                          : ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                            >> 6U)))
+                              ? 0xffffffffU : 0U))));
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_pin 
         = (((((((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__out0 
                  & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__en0) 
@@ -3113,12 +2423,13 @@ VL_INLINE_OPT void Vtop___024root___sequent__TOP__7(Vtop___024root* vlSelf) {
                  & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__dram_array__DOT__data__out__en3)) 
              & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__data__en0) 
             & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__data__en0) 
-           | (((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                ? vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_to_mem
-                : 0U) & ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                          ? 0xffffffffU : ((1U & vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line[0U])
-                                            ? 0xffffffffU
-                                            : 0U))));
+           | (((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                              >> 6U))) ? vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__data_to_mem
+                : 0U) & ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                        >> 6U))) ? 0xffffffffU
+                          : ((1U & (IData)((vlSelf->top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line 
+                                            >> 6U)))
+                              ? 0xffffffffU : 0U))));
 }
 
 VL_INLINE_OPT void Vtop___024root___sequent__TOP__8(Vtop___024root* vlSelf) {
