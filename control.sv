@@ -12,7 +12,7 @@ module control( input logic [7:0]Op,
 		output logic [1:0] MemToReg,
         output logic double_jump_flag,
 		output logic RegWrite );
-        
+
 
     always_comb begin
         MemRead = 4'b0000;

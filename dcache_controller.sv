@@ -77,17 +77,83 @@ module dcache_controller (input  clock, reset,
    assign mem_valid = mem_request_valid;
    assign dcache_data_out = dcache_data_to_cpu;
    assign dcache_data_ready = dcache_data_to_cpu_ready;
-   
+
+   logic [`DRAM_ADDRESS_SIZE-1:0] modularAddress;
+   logic [`DRAM_WORD_SIZE/4-1:0] dcache_sram_read0;
+   logic [`DRAM_WORD_SIZE/4-1:0] dcache_sram_read1;
+   logic [`DRAM_WORD_SIZE/4-1:0] dcache_sram_read2;
+   logic [`DRAM_WORD_SIZE/4-1:0] dcache_sram_read3;
+   logic [`DRAM_WORD_SIZE-1:0] dcache_read[`DRAM_BLOCK_SIZE-1:0];
+   assign modularAddress = dcache_address % 4;
+
+   assign dcache_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24] = dcache_sram_read3;
+   assign dcache_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16] = dcache_sram_read2;
+   assign dcache_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8] = dcache_sram_read1;
+   assign dcache_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0] = dcache_sram_read0;
+
+   always_comb begin
+       case(modularAddress)
+           default:begin
+            dcache_sram_read0 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+            dcache_sram_read1 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+            dcache_sram_read2 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+            dcache_sram_read3 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+
+	        dcache_sram_write_temp[7:0] = (dcache_byte_en[0]==1) ? dcache_data_in[7:0] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+	        dcache_sram_write_temp[15:8] = (dcache_byte_en[1]==1) ? dcache_data_in[15:8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+	        dcache_sram_write_temp[23:16] = (dcache_byte_en[2]==1) ? dcache_data_in[23:16] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+	        dcache_sram_write_temp[31:24] = (dcache_byte_en[3]==1) ? dcache_data_in[31:24] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+        end
+           1:begin
+            dcache_sram_read0 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+            dcache_sram_read1 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+            dcache_sram_read2 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+            dcache_sram_read3 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+
+	        dcache_sram_write_temp[7:0] = (dcache_byte_en[3]==1) ? dcache_data_in[31:24] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+	        dcache_sram_write_temp[15:8] = (dcache_byte_en[0]==1) ? dcache_data_in[7:0] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+	        dcache_sram_write_temp[23:16] = (dcache_byte_en[1]==1) ? dcache_data_in[15:8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+	        dcache_sram_write_temp[31:24] = (dcache_byte_en[2]==1) ? dcache_data_in[23:16] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+           end
+
+           2:begin
+            dcache_sram_read0 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+            dcache_sram_read1 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+            dcache_sram_read2 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+            dcache_sram_read3 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+
+	        dcache_sram_write_temp[7:0] = (dcache_byte_en[2]==1) ? dcache_data_in[23:16] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+	        dcache_sram_write_temp[15:8] = (dcache_byte_en[3]==1) ? dcache_data_in[31:24] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+	        dcache_sram_write_temp[23:16] = (dcache_byte_en[0]==1) ? dcache_data_in[7:0] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+	        dcache_sram_write_temp[31:24] = (dcache_byte_en[1]==1) ? dcache_data_in[15:8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+           end
+
+           3:begin
+            dcache_sram_read0 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+            dcache_sram_read1 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+            dcache_sram_read2 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+            dcache_sram_read3 = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+
+	        dcache_sram_write_temp[7:0] = (dcache_byte_en[1]==1) ? dcache_data_in[15:8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+	        dcache_sram_write_temp[15:8] = (dcache_byte_en[2]==1) ? dcache_data_in[23:16] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+	        dcache_sram_write_temp[23:16] = (dcache_byte_en[3]==1) ? dcache_data_in[31:24] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+	        dcache_sram_write_temp[31:24] = (dcache_byte_en[0]==1) ? dcache_data_in[7:0] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+           end
+        endcase
+
+   end
+
 	// replace the following for lines for quartus
    // genvar i;
    // generate
    //   for (i=0; i < `DRAM_WORD_SIZE/8; i++) begin
 	//  assign dcache_sram_write_temp[(i+1)*8-1:i*8] = (dcache_byte_en[i]==1) ? dcache_data_in[(i+1)*8-1:i*8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][(i+1)*8-1:i*8];
    // with the following lines:
-	assign dcache_sram_write_temp[7:0] = (dcache_byte_en[0]==1) ? dcache_data_in[7:0] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
-	assign dcache_sram_write_temp[15:8] = (dcache_byte_en[1]==1) ? dcache_data_in[15:8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
-	assign dcache_sram_write_temp[23:16] = (dcache_byte_en[2]==1) ? dcache_data_in[23:16] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
-	assign dcache_sram_write_temp[31:24] = (dcache_byte_en[3]==1) ? dcache_data_in[31:24] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
+
+	//assign dcache_sram_write_temp[7:0] = (dcache_byte_en[0]==1) ? dcache_data_in[7:0] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][7:0];
+	//assign dcache_sram_write_temp[15:8] = (dcache_byte_en[1]==1) ? dcache_data_in[15:8] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][15:8];
+	//assign dcache_sram_write_temp[23:16] = (dcache_byte_en[2]==1) ? dcache_data_in[23:16] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][23:16];
+	//assign dcache_sram_write_temp[31:24] = (dcache_byte_en[3]==1) ? dcache_data_in[31:24] : dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]][31:24];
    // remove the following 2 lines for quartus
    //   end
    //endgenerate
@@ -116,7 +182,8 @@ module dcache_controller (input  clock, reset,
       dcache_sram_write[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]] = dcache_sram_write_temp;
 
       // access only the correct word of the cache sram block when reading
-      dcache_data_to_cpu = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]];
+      //dcache_data_to_cpu = dcache_sram_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]];
+      dcache_data_to_cpu = dcache_read[dcache_address[log2(`DRAM_BLOCK_SIZE)+1:2]];
 
       // main memory request address is a copy of cpu request address to cache
       mem_request_address = dcache_address;
