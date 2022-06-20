@@ -474,7 +474,7 @@ module datapath(input logic clk, reset,
 
 	// Data	Memory Address
 	assign datamem_address = ExMem.Alu1out[11:0];
-    assign datamem_write_data = (ForwardingD) ? MemWb.datamem_data:ExMem.db;
+    assign datamem_write_data = (ForwardingD) ? MemWb.Alu2out:ExMem.db;
 
 	// Data Memory Write Logic
     assign dcache_byte_en = ExMem.MemWrite;

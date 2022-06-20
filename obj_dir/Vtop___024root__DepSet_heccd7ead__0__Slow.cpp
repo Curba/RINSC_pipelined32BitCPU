@@ -1669,352 +1669,6 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
                                                           << 2U) 
                                                          | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
                                                             >> 0x1eU)))])))));
-    if ((1U == (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                      >> 0x1cU)))) {
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xffU & ((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                            ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                 & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                    == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                 >> 0x17U))))
-                                 ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                     << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                                  >> 5U))
-                                 : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                     << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                               >> 0x1cU))) 
-                               >> 0x18U) : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                              >> 0x1eU)))])));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff00U & (((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                               ? (((0U != (0x1fU & 
-                                           vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                   & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                      == (0x1fU & (
-                                                   vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                   >> 0x17U))))
-                                   ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                       << 0x1bU) | 
-                                      (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                       >> 5U)) : ((
-                                                   vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                   << 4U) 
-                                                  | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                                     >> 0x1cU)))
-                               : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                  [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                           << 2U) | 
-                                          (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                           >> 0x1eU)))] 
-                                  >> 8U)) << 8U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff0000U & (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                                 ? ((((0U != (0x1fU 
-                                              & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                      & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                         == (0x1fU 
-                                             & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                >> 0x17U))))
-                                      ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                          << 0x1bU) 
-                                         | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                            >> 5U))
-                                      : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                          << 4U) | 
-                                         (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                          >> 0x1cU))) 
-                                    >> 8U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                              [(7U 
-                                                & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                    << 2U) 
-                                                   | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                      >> 0x1eU)))] 
-                                              >> 0x10U)) 
-                               << 0x10U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                    ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                         & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                            == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                         >> 0x17U))))
-                         ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                             << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                          >> 5U)) : 
-                        ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                          << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                    >> 0x1cU))) >> 0x10U)
-                    : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                       [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                          >> 0x1eU)))] 
-                       >> 0x18U)) << 0x18U));
-    } else if ((2U == (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                             >> 0x1cU)))) {
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xffU & ((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                            ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                 & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                    == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                 >> 0x17U))))
-                                 ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                     << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                                  >> 5U))
-                                 : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                     << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                               >> 0x1cU))) 
-                               >> 0x10U) : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                              >> 0x1eU)))])));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff00U & (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                               ? ((((0U != (0x1fU & 
-                                            vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                    & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                       == (0x1fU & 
-                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                            >> 0x17U))))
-                                    ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                        << 0x1bU) | 
-                                       (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                        >> 5U)) : (
-                                                   (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                    << 4U) 
-                                                   | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                                      >> 0x1cU))) 
-                                  >> 0x18U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                               [(7U 
-                                                 & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                     << 2U) 
-                                                    | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                       >> 0x1eU)))] 
-                                               >> 8U)) 
-                             << 8U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff0000U & (((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                                 ? (((0U != (0x1fU 
-                                             & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                     & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                        == (0x1fU & 
-                                            (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                             >> 0x17U))))
-                                     ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                         << 0x1bU) 
-                                        | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                           >> 5U)) : 
-                                    ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                      << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                                >> 0x1cU)))
-                                 : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                    [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                             << 2U) 
-                                            | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                               >> 0x1eU)))] 
-                                    >> 0x10U)) << 0x10U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                    ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                         & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                            == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                         >> 0x17U))))
-                         ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                             << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                          >> 5U)) : 
-                        ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                          << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                    >> 0x1cU))) >> 8U)
-                    : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                       [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                          >> 0x1eU)))] 
-                       >> 0x18U)) << 0x18U));
-    } else if ((3U == (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                             >> 0x1cU)))) {
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xffU & ((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                            ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                 & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                    == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                 >> 0x17U))))
-                                 ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                     << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                                  >> 5U))
-                                 : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                     << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                               >> 0x1cU))) 
-                               >> 8U) : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                              >> 0x1eU)))])));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff00U & (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                               ? ((((0U != (0x1fU & 
-                                            vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                    & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                       == (0x1fU & 
-                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                            >> 0x17U))))
-                                    ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                        << 0x1bU) | 
-                                       (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                        >> 5U)) : (
-                                                   (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                    << 4U) 
-                                                   | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                                      >> 0x1cU))) 
-                                  >> 0x10U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                               [(7U 
-                                                 & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                     << 2U) 
-                                                    | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                       >> 0x1eU)))] 
-                                               >> 8U)) 
-                             << 8U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff0000U & (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                                 ? ((((0U != (0x1fU 
-                                              & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                      & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                         == (0x1fU 
-                                             & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                >> 0x17U))))
-                                      ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                          << 0x1bU) 
-                                         | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                            >> 5U))
-                                      : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                          << 4U) | 
-                                         (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                          >> 0x1cU))) 
-                                    >> 0x18U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                                 [(7U 
-                                                   & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                       << 2U) 
-                                                      | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                         >> 0x1eU)))] 
-                                                 >> 0x10U)) 
-                               << 0x10U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                    ? (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                        & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                           == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                        >> 0x17U))))
-                        ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                            << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                         >> 5U)) : 
-                       ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                         << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                   >> 0x1cU))) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                                  [
-                                                  (7U 
-                                                   & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                       << 2U) 
-                                                      | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                         >> 0x1eU)))] 
-                                                  >> 0x18U)) 
-                  << 0x18U));
-    } else {
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xffU & ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                            ? (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                   == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                >> 0x17U))))
-                                ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                    << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                                 >> 5U))
-                                : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                    << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                              >> 0x1cU)))
-                            : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                              >> 0x1eU)))])));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff00U & (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                               ? ((((0U != (0x1fU & 
-                                            vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                    & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                       == (0x1fU & 
-                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                            >> 0x17U))))
-                                    ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                        << 0x1bU) | 
-                                       (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                        >> 5U)) : (
-                                                   (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                    << 4U) 
-                                                   | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                                      >> 0x1cU))) 
-                                  >> 8U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                            [(7U & 
-                                              ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                << 2U) 
-                                               | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                  >> 0x1eU)))] 
-                                            >> 8U)) 
-                             << 8U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (0xff0000U & (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                                 ? ((((0U != (0x1fU 
-                                              & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                                      & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                                         == (0x1fU 
-                                             & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                                >> 0x17U))))
-                                      ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                          << 0x1bU) 
-                                         | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                            >> 5U))
-                                      : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                          << 4U) | 
-                                         (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                          >> 0x1cU))) 
-                                    >> 0x10U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                                                 [(7U 
-                                                   & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                                       << 2U) 
-                                                      | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                         >> 0x1eU)))] 
-                                                 >> 0x10U)) 
-                               << 0x10U)));
-        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
-            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
-               | (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
-                    ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
-                         & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
-                            == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
-                                         >> 0x17U))))
-                         ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                             << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                          >> 5U)) : 
-                        ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                          << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                    >> 0x1cU))) >> 0x18U)
-                    : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
-                       [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
-                                << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                          >> 0x1eU)))] 
-                       >> 0x18U)) << 0x18U));
-    }
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__mem_request_data[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
         [7U];
@@ -2204,6 +1858,433 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
             }
         }
     }
+    if ((1U == (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                      >> 0x1cU)))) {
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xffU & ((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                            ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                 & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                    == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                 >> 0x17U))))
+                                 ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                     ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                     : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                         << 0x1bU) 
+                                        | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                           >> 5U)))
+                                 : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                     << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                               >> 0x1cU))) 
+                               >> 0x18U) : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                              >> 0x1eU)))])));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff00U & (((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                               ? (((0U != (0x1fU & 
+                                           vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                   & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                      == (0x1fU & (
+                                                   vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                   >> 0x17U))))
+                                   ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                       ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                       : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                           << 0x1bU) 
+                                          | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                             >> 5U)))
+                                   : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                       << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                                 >> 0x1cU)))
+                               : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                  [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                           << 2U) | 
+                                          (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                           >> 0x1eU)))] 
+                                  >> 8U)) << 8U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff0000U & (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                 ? ((((0U != (0x1fU 
+                                              & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                      & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                         == (0x1fU 
+                                             & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                >> 0x17U))))
+                                      ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                          ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                          : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                              << 0x1bU) 
+                                             | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                                >> 5U)))
+                                      : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                          << 4U) | 
+                                         (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                          >> 0x1cU))) 
+                                    >> 8U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                              [(7U 
+                                                & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                    << 2U) 
+                                                   | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                      >> 0x1eU)))] 
+                                              >> 0x10U)) 
+                               << 0x10U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                    ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                         & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                            == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                         >> 0x17U))))
+                         ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                             ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                             : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                 << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                         : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                             << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                       >> 0x1cU))) 
+                       >> 0x10U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                    [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                             << 2U) 
+                                            | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                               >> 0x1eU)))] 
+                                    >> 0x18U)) << 0x18U));
+    } else if ((2U == (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                             >> 0x1cU)))) {
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xffU & ((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                            ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                 & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                    == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                 >> 0x17U))))
+                                 ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                     ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                     : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                         << 0x1bU) 
+                                        | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                           >> 5U)))
+                                 : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                     << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                               >> 0x1cU))) 
+                               >> 0x10U) : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                              >> 0x1eU)))])));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff00U & (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                               ? ((((0U != (0x1fU & 
+                                            vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                    & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                       == (0x1fU & 
+                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                            >> 0x17U))))
+                                    ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                        ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                        : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                            << 0x1bU) 
+                                           | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                                    : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                        << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                                  >> 0x1cU))) 
+                                  >> 0x18U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                               [(7U 
+                                                 & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                     << 2U) 
+                                                    | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                       >> 0x1eU)))] 
+                                               >> 8U)) 
+                             << 8U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff0000U & (((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                 ? (((0U != (0x1fU 
+                                             & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                     & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                        == (0x1fU & 
+                                            (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                             >> 0x17U))))
+                                     ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                         ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                         : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                             << 0x1bU) 
+                                            | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                               >> 5U)))
+                                     : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                         << 4U) | (
+                                                   vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                                   >> 0x1cU)))
+                                 : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                    [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                             << 2U) 
+                                            | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                               >> 0x1eU)))] 
+                                    >> 0x10U)) << 0x10U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                    ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                         & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                            == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                         >> 0x17U))))
+                         ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                             ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                             : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                 << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                         : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                             << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                       >> 0x1cU))) 
+                       >> 8U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                 [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                          << 2U) | 
+                                         (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                          >> 0x1eU)))] 
+                                 >> 0x18U)) << 0x18U));
+    } else if ((3U == (3U & (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                             >> 0x1cU)))) {
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xffU & ((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                            ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                 & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                    == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                 >> 0x17U))))
+                                 ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                     ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                     : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                         << 0x1bU) 
+                                        | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                           >> 5U)))
+                                 : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                     << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                               >> 0x1cU))) 
+                               >> 8U) : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                              >> 0x1eU)))])));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff00U & (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                               ? ((((0U != (0x1fU & 
+                                            vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                    & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                       == (0x1fU & 
+                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                            >> 0x17U))))
+                                    ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                        ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                        : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                            << 0x1bU) 
+                                           | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                                    : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                        << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                                  >> 0x1cU))) 
+                                  >> 0x10U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                               [(7U 
+                                                 & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                     << 2U) 
+                                                    | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                       >> 0x1eU)))] 
+                                               >> 8U)) 
+                             << 8U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff0000U & (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                 ? ((((0U != (0x1fU 
+                                              & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                      & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                         == (0x1fU 
+                                             & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                >> 0x17U))))
+                                      ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                          ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                          : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                              << 0x1bU) 
+                                             | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                                >> 5U)))
+                                      : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                          << 4U) | 
+                                         (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                          >> 0x1cU))) 
+                                    >> 0x18U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                                 [(7U 
+                                                   & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                       << 2U) 
+                                                      | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                         >> 0x1eU)))] 
+                                                 >> 0x10U)) 
+                               << 0x10U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                    ? (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                        & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                           == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                        >> 0x17U))))
+                        ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                            ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                            : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                             >> 5U)))
+                        : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                            << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                      >> 0x1cU))) : 
+                   (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                    [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                             << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                       >> 0x1eU)))] 
+                    >> 0x18U)) << 0x18U));
+    } else {
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffff00U & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xffU & ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                            ? (((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                   == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                >> 0x17U))))
+                                ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                    ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                    : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                        << 0x1bU) | 
+                                       (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                        >> 5U))) : 
+                               ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                 << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                           >> 0x1cU)))
+                            : vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                           [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                    << 2U) | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                              >> 0x1eU)))])));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffff00ffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff00U & (((4U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                               ? ((((0U != (0x1fU & 
+                                            vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                    & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                       == (0x1fU & 
+                                           (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                            >> 0x17U))))
+                                    ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                        ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                        : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                            << 0x1bU) 
+                                           | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                                    : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                        << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                                  >> 0x1cU))) 
+                                  >> 8U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                            [(7U & 
+                                              ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                << 2U) 
+                                               | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                  >> 0x1eU)))] 
+                                            >> 8U)) 
+                             << 8U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xff00ffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (0xff0000U & (((8U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                 ? ((((0U != (0x1fU 
+                                              & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                                      & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                                         == (0x1fU 
+                                             & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                                >> 0x17U))))
+                                      ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                          ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                          : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                              << 0x1bU) 
+                                             | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                                >> 5U)))
+                                      : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                          << 4U) | 
+                                         (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                          >> 0x1cU))) 
+                                    >> 0x10U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                                 [(7U 
+                                                   & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                                       << 2U) 
+                                                      | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                                         >> 0x1eU)))] 
+                                                 >> 0x10U)) 
+                               << 0x10U)));
+        vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp 
+            = ((0xffffffU & vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write_temp) 
+               | (((0x10U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                    ? ((((0U != (0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U])) 
+                         & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
+                            == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
+                                         >> 0x17U))))
+                         ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                             ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                             : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                 << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                         : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                             << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                       >> 0x1cU))) 
+                       >> 0x18U) : (vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
+                                    [(7U & ((vlSelf->top__DOT__datapath__DOT__ExMem[3U] 
+                                             << 2U) 
+                                            | (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                               >> 0x1eU)))] 
+                                    >> 0x18U)) << 0x18U));
+    }
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[7U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [7U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[6U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [6U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[5U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [5U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[4U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [4U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[3U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [3U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[2U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [2U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[1U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [1U];
+    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0U] 
+        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+        [0U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[7U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [7U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[6U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [6U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[5U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [5U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[4U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [4U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[3U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [3U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[2U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [2U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[1U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [1U];
+    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0U] 
+        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+        [0U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_read
         [7U];
@@ -2264,53 +2345,29 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
             }
         }
     }
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[7U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[7U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [7U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[6U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[6U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [6U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[5U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[5U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [5U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[4U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[4U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [4U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[3U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[3U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [3U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[2U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[2U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [2U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[1U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[1U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [1U];
-    vlSelf->top__DOT__memory__DOT__dcache_wbBlock[0U] 
-        = vlSelf->top__DOT__memory__DOT____Vcellout__dcache_controller__mem_data_out
-        [0U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[7U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [7U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[6U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [6U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[5U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [5U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[4U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [4U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[3U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [3U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[2U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [2U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[1U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
-        [1U];
-    vlSelf->top__DOT__memory__DOT__icache_controller__DOT____Vcellinp__inst_cache_sram__data_write[0U] 
-        = vlSelf->top__DOT__memory__DOT__icache_controller__DOT__icache_sram_write
+    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0U] 
+        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [0U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[7U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
@@ -2335,30 +2392,6 @@ VL_ATTR_COLD void Vtop___024root___settle__TOP__0(Vtop___024root* vlSelf) {
         [1U];
     vlSelf->top__DOT__memory__DOT__dcache_controller__DOT____Vcellinp__data_cache_sram__data_write[0U] 
         = vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_sram_write
-        [0U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[7U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [7U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[6U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [6U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[5U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [5U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[4U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [4U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[3U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [3U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[2U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [2U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[1U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
-        [1U];
-    vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data[0U] 
-        = vlSelf->top__DOT__memory__DOT__dcache_wbBlock
         [0U];
     vlSelf->top__DOT__memory__DOT__dram_controller__DOT____Vcellinp__dram_interface_dcache__bus_data_to_mem[7U] 
         = vlSelf->top__DOT__memory__DOT____Vcellinp__dram_controller__dram_port2_write_data

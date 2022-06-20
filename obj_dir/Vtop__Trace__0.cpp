@@ -68,14 +68,15 @@ void Vtop___024root__trace_chg_sub_0(Vtop___024root* vlSelf, VerilatedVcd* trace
                                        == (0x1fU & 
                                            (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
                                             >> 0x17U))))
-                                    ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                        << 0x1bU) | 
-                                       (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                        >> 5U)) : (
-                                                   (vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
-                                                    << 4U) 
-                                                   | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
-                                                      >> 0x1cU)))),32);
+                                    ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                        ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                        : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                            << 0x1bU) 
+                                           | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                              >> 5U)))
+                                    : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
+                                        << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
+                                                  >> 0x1cU)))),32);
         tracep->chgCData(oldp+30,((0xfU & (vlSelf->top__DOT__datapath__DOT__ExMem[4U] 
                                            >> 1U))),4);
         tracep->chgIData(oldp+31,(vlSelf->top__DOT__memory__DOT__dcache_controller__DOT__dcache_read

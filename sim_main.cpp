@@ -104,8 +104,6 @@ int main(int argc, char** argv, char** env){
     }else if(tb->m_topsim->rootp->mem_stall_flag == 0){
         stall_dummy = 0;
     }
-    if(tb->m_topsim->rootp->Op == 4)
-        break;
     if(tb->m_topsim->rootp->Op != 0 && tb->m_topsim->rootp->mem_stall_flag == 0)
         instr_count++;
 

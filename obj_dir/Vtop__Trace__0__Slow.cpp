@@ -782,9 +782,12 @@ VL_ATTR_COLD void Vtop___024root__trace_full_sub_0(Vtop___024root* vlSelf, Veril
                                  & ((0x1fU & vlSelf->top__DOT__datapath__DOT__MemWb[0U]) 
                                     == (0x1fU & (vlSelf->top__DOT__datapath__DOT__ExMem[0U] 
                                                  >> 0x17U))))
-                                 ? ((vlSelf->top__DOT__datapath__DOT__MemWb[2U] 
-                                     << 0x1bU) | (vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
-                                                  >> 5U))
+                                 ? ((2U & vlSelf->top__DOT__datapath__DOT__ExMem[4U])
+                                     ? vlSelf->top__DOT__datapath__DOT__datamem_data
+                                     : ((vlSelf->top__DOT__datapath__DOT__MemWb[1U] 
+                                         << 0x1bU) 
+                                        | (vlSelf->top__DOT__datapath__DOT__MemWb[0U] 
+                                           >> 5U)))
                                  : ((vlSelf->top__DOT__datapath__DOT__ExMem[2U] 
                                      << 4U) | (vlSelf->top__DOT__datapath__DOT__ExMem[1U] 
                                                >> 0x1cU)))),32);
