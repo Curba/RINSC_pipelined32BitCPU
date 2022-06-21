@@ -72,13 +72,13 @@ module datapath(input logic clk, reset,
                 mem_stall_flag = 0;
 
 		if((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
-            ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+            ||(IdEx.rd == IfId.instruction[21:17])))
                 normal_stall = 1;
             else
                 normal_stall =0;
 
 		if(((IdEx.MemRead != 4'b0000)&&((IdEx.rd == IfId.instruction[26:22])
-            ||(IdEx.rd == (RbSelect ? IfId.instruction[31:27]:IfId.instruction[21:17]))))
+            ||(IdEx.rd == IfId.instruction[21:17])))
             || (dcache_dataRequest && !dcache_data_ready)
             || (icache_instrRequest && !icache_instrReady) || transfer_in_progress)
             begin
@@ -181,7 +181,7 @@ module datapath(input logic clk, reset,
 	} IdEx;
 
 	always @ (posedge clk) begin
-        if(mem_stall_flag == 0 || (mem_stall_flag == 1 && normal_stall == 1))begin
+        if(mem_stall_flag == 0 )begin
         IdEx.MemSignExtend <= MemSignExtend;
 		IdEx.ALUSrc <= ALUSrc;
 		IdEx.ALUOp <= ALUOp;
@@ -266,13 +266,16 @@ module datapath(input logic clk, reset,
     logic [4:0] debugmemwbrd;
     logic [4:0] debugexmemrd;
     logic [4:0] debugidexra;
-
+    logic [3:0] debugmemwbmemread;
+    logic [3:0] debugexmemmemwrite;
     assign debugmemwbregwrite = MemWb.RegWrite;
     assign debugmemwbrd = MemWb.rd;
     assign debugexmemrd = ExMem.rd;
     assign debugidexra = IdEx.ra;
     assign debugexmemregwrite = ExMem.RegWrite;
     assign debugbranch = ExMem.branch_flag;
+    assign debugmemwbmemread = MemWb.MemRead;
+    assign debugexmemmemwrite = ExMem.MemWrite;
 
 
     always_comb begin
@@ -362,7 +365,7 @@ module datapath(input logic clk, reset,
 
 	// Ex Mem Stage
 	always @ (posedge clk) begin
-        if(mem_stall_flag == 0 || (mem_stall_flag == 1 && normal_stall == 1))begin
+        if(mem_stall_flag == 0)begin
             ExMem.PCincremented <= IdEx.PCincremented;
             ExMem.MemSignExtend <= IdEx.MemSignExtend;
             ExMem.MemRead <= IdEx.MemRead;
@@ -433,16 +436,19 @@ module datapath(input logic clk, reset,
 		logic [31:0] datamem_data;
 		logic [31:0] Alu2out;
 		logic [4:0] rd;
+        logic [3:0] MemRead;
 	} MemWb;
 
 	always @ (posedge clk) begin
-        if(mem_stall_flag == 0 || (mem_stall_flag == 1 && normal_stall == 1))begin
+        if(mem_stall_flag == 0)begin
             MemWb.PCincremented <= ExMem.PCincremented;
             MemWb.RegWrite <= ExMem.RegWrite;
             MemWb.MemToReg <= ExMem.MemToReg;
             MemWb.datamem_data <= datamem_data;
             MemWb.Alu2out <= Alu2out;
             MemWb.rd <= ExMem.rd;
+            MemWb.MemRead <= ExMem.MemRead;
+            MemWb.datamem_data <= datamem_data;
         end
         else begin
          /*   MemWb.PCincremented <= MemWb.PCincremented;
@@ -453,8 +459,8 @@ module datapath(input logic clk, reset,
             MemWb.rd <= MemWb.rd;*/
             end
 	end
-
-/*
+    
+/*   
 
 	initial
 		$readmemh("instruction_memory.dat", instmem);
@@ -474,8 +480,15 @@ module datapath(input logic clk, reset,
 
 	// Data	Memory Address
 	assign datamem_address = ExMem.Alu1out[11:0];
-    assign datamem_write_data = (ForwardingD) ? MemWb.Alu2out:ExMem.db;
-
+   // assign datamem_write_data = (ForwardingD) ? MemWb.Alu2out:ExMem.db;
+    always_comb begin
+        if(ForwardingD && MemWb.MemRead == 0)
+            datamem_write_data = MemWb.Alu2out;
+        else if(ForwardingD && MemWb.MemRead != 0 && ExMem.MemWrite != 0)
+            datamem_write_data = MemWb.datamem_data;
+        else
+            datamem_write_data = ExMem.db;
+     end
 	// Data Memory Write Logic
     assign dcache_byte_en = ExMem.MemWrite;
 

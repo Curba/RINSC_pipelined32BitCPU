@@ -38,11 +38,11 @@ VL_MODULE(Vtop___024root) {
         CData/*0:0*/ top__DOT__transfer_in_progress;
         CData/*1:0*/ top__DOT__datapath__DOT__ForwardingA;
         CData/*1:0*/ top__DOT__datapath__DOT__ForwardingB;
+        CData/*0:0*/ top__DOT__datapath__DOT__ForwardingD;
         CData/*0:0*/ top__DOT__datapath__DOT__PCenable;
         CData/*0:0*/ top__DOT__datapath__DOT__IfIdEN;
         CData/*0:0*/ top__DOT__datapath__DOT__flush;
         CData/*0:0*/ top__DOT__datapath__DOT__mem_stall_flag;
-        CData/*0:0*/ top__DOT__datapath__DOT__normal_stall;
         CData/*0:0*/ top__DOT__datapath__DOT__zero_flag;
         CData/*0:0*/ top__DOT__datapath__DOT__branch_src;
         CData/*0:0*/ top__DOT__memory__DOT__mem_ready_icache;
@@ -140,7 +140,7 @@ VL_MODULE(Vtop___024root) {
         QData/*43:0*/ top__DOT__datapath__DOT__IfId;
         VlWide<7>/*201:0*/ top__DOT__datapath__DOT__IdEx;
         VlWide<5>/*148:0*/ top__DOT__datapath__DOT__ExMem;
-        VlWide<3>/*83:0*/ top__DOT__datapath__DOT__MemWb;
+        VlWide<3>/*87:0*/ top__DOT__datapath__DOT__MemWb;
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__read_acknowledge_delay_line;
         QData/*38:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_icache__DOT__dram__DOT__write_acknowledge_delay_line;
         QData/*34:0*/ top__DOT__memory__DOT__dram_controller__DOT__dram_interface_dcache__DOT__dram__DOT__read_acknowledge_delay_line;
