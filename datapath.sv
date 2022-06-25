@@ -341,7 +341,7 @@ module datapath(input logic clk, reset,
 			default: Alu1out = alu1in_a + alu1in_b;
 		endcase
 
-        assign zero_flag = (Alu1out == 0) ? 1:0;
+        zero_flag = (Alu1out == 0) ? 1:0;
 	end
 
 	struct packed{
@@ -459,8 +459,8 @@ module datapath(input logic clk, reset,
             MemWb.rd <= MemWb.rd;*/
             end
 	end
-    
-/*   
+
+/*
 
 	initial
 		$readmemh("instruction_memory.dat", instmem);
