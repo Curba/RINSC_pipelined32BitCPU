@@ -1,4 +1,4 @@
-# RINSC, is not so complex
+# RINSC, Is Not So Complex : RINSC
 
 RINSC is a 32-bit 5-stage pipelined CPU with L1 cache and memory. 
 RINSC has 2 ALUs and forwarding capabilities to decrease CPI. 
